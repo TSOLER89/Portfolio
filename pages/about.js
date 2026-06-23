@@ -17,7 +17,6 @@ export function renderAbout() {
             </div>
         </section>
 
-        <section class="lia-section">
             <div class="section-header">
                 <p class="section-kicker">LIA-period</p>
             </div>
@@ -47,7 +46,7 @@ export function renderAbout() {
                         <ul>
                             <li>Arbetade i tre delar av lösningen: frontend, backend och PDF-generator.</li>
                             <li>Utvecklade funktion för knapp och uppladdning av bilder/foton till SharePoint med stabil filhantering.</li>
-                            <li>Arbetade med formulär för Monteringsanalys: datainsamling, användarflöde, validering och systemintegration.</li>
+                            <li>Arbetade med datainsamling, användarflöde, validering och systemintegration.</li>
                             <li>Implementerade mejlhantering och email-verifiering i arbetsflödet.</li>
                             <li>Utvecklade funktionalitet för PDF-autentisering och säkrare dokumenthantering.</li>
                         </ul>
