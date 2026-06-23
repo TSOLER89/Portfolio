@@ -3,7 +3,7 @@ import { removeFloatingLogos } from "../ui/FloatingLogos.js";
 export function renderAbout() {
     const app = document.getElementById("app");
 
-    // Se till att loggor tas bort när vi lämnar Home
+    // Se till att loggor tas bort när vi lämnar startsidan
     removeFloatingLogos();
 
     app.innerHTML = `
@@ -11,12 +11,13 @@ export function renderAbout() {
             <div class="about-content">
                 <img src="Assets/Photos/CvBild.jpg" alt="Tsoler Hayitian" class="about-image">
                 <div class="about-text">
-                    <p>Jag pluggar till <strong>systemutvecklare</strong> och tycker det är mycket spännande att lära mig mer om programmering och webbutveckling.</p>
-                    <p>Jag är en engagerad och nyfiken systemutvecklarstudent som brinner för att skapa effektiva och användarvänliga digitala lösningar. Jag utvecklar, testar och underhåller kod, deltar i systemdesign och arbetar agilt.</p>
+                    <p>Jag studerar till <strong>systemutvecklare</strong> och drivs av att förstå hur teknik kan lösa riktiga problem.</p>
+                    <p>Jag är en engagerad och nyfiken utvecklarstudent som gillar att bygga användarvänliga lösningar, arbeta strukturerat och fortsätta utvecklas inom både frontend och backend.</p>
                 </div>
             </div>
         </section>
 
+        <section class="lia-section">
             <div class="section-header">
                 <p class="section-kicker">LIA-period</p>
             </div>
@@ -36,7 +37,7 @@ export function renderAbout() {
 
                 <div class="lia-experience">
                     <p>
-                        Under min LIA1 på <strong>Consid AB i Linköping</strong> arbetade jag i projektet
+                        Under min LIA 1 på <strong>Consid AB i Linköping</strong> arbetade jag i projektet
                         <strong>STB Driftportalen</strong>, ett webbaserat system för hantering av
                         säkerhetsdokumentation och projektflöden inom byggbranschen.
                     </p>
@@ -45,7 +46,7 @@ export function renderAbout() {
                         <h4>Arbetsområden och leveranser</h4>
                         <ul>
                             <li>Arbetade i tre delar av lösningen: frontend, backend och PDF-generator.</li>
-                            <li>Utvecklade funktion för knapp och uppladdning av bilder/foton till SharePoint med stabil filhantering.</li>
+                            <li>Utvecklade funktion för uppladdning av bilder och foton till SharePoint med stabil filhantering.</li>
                             <li>Arbetade med datainsamling, användarflöde, validering och systemintegration.</li>
                             <li>Implementerade mejlhantering och email-verifiering i arbetsflödet.</li>
                             <li>Utvecklade funktionalitet för PDF-autentisering och säkrare dokumenthantering.</li>
@@ -66,7 +67,7 @@ export function renderAbout() {
         <section class="lia-section">
             <div class="lia-card">
                 <div class="lia-card-top">
-                    <span class="lia-card-title">LIA 2 – Examensperiod</span>
+                    <span class="lia-card-title">LIA 2 - Examensperiod</span>
                     <span class="lia-badge upcoming">Kommande</span>
                 </div>
 
@@ -108,28 +109,39 @@ export function renderAbout() {
 
             <div class="hobbies-grid">
                 <div class="hobby-card">
-                    <span class="hobby-icon">🎵</span>
+                    <span class="hobby-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <path d="M16 3v11.2a3.2 3.2 0 1 0 2 2.97V7h4V3h-6Z"></path>
+                        </svg>
+                    </span>
                     <div>
                         <h4>Musik</h4>
                         <p>Musik hjälper mig att behålla fokus och kreativitet.</p>
                     </div>
                 </div>
                 <div class="hobby-card">
-                    <span class="hobby-icon">💃</span>
+                    <span class="hobby-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <path d="M14.5 4.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm-5.2 5.1 2.4-1.4 1.6 2.3 2.8 1.4-.9 1.8-3.3-1.6-.9-1.3-.8 3 2.1 2.1V21H10v-4.1l-2.5-2.5a2 2 0 0 1-.5-1.9l1-4.8 1.3 1.9Z"></path>
+                        </svg>
+                    </span>
                     <div>
                         <h4>Dans</h4>
                         <p>Dans ger mig energi och balans vid sidan av studierna.</p>
                     </div>
                 </div>
                 <div class="hobby-card">
-                    <span class="hobby-icon">🏋️</span>
+                    <span class="hobby-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <path d="M2 10h3v4H2v-4Zm17 0h3v4h-3v-4ZM6 8h2v8H6V8Zm10 0h2v8h-2V8ZM9 11h6v2H9v-2Z"></path>
+                        </svg>
+                    </span>
                     <div>
                         <h4>Träning</h4>
                         <p>Träning är en viktig del av min vardag och bidrar till hälsa.</p>
                     </div>
                 </div>
             </div>
-
         </section>
     `;
 }

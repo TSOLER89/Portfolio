@@ -439,6 +439,10 @@ footer p {
     margin-bottom: 1rem;
 }
 
+.lia-card-top .lia-badge {
+    margin-left: auto;
+}
+
 .lia-card-title {
     font-size: 1rem;
     font-weight: 700;
@@ -500,9 +504,23 @@ footer p {
 }
 
 .hobby-icon {
-    font-size: 1.4rem;
-    line-height: 1;
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     flex-shrink: 0;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f7d7e8, #f1e5f8);
+    color: #b86fae;
+    box-shadow: inset 0 0 0 1px rgba(184, 111, 174, 0.16);
+}
+
+.hobby-icon svg {
+    width: 22px;
+    height: 22px;
+    display: block;
+    fill: currentColor;
 }
 
 .hobby-card h4 {
