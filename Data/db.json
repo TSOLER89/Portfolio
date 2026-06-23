@@ -1,12 +1,12 @@
 [
     {
-        "title": "DagsBokApp – ToDo / Diary App",
-        "type": "backend",
+        "title": "DagsBokApp - ToDo / Diary App",
+        "type": "Backend",
         "description": "Konsolbaserad C#-applikation för att skapa och hantera dagboksanteckningar och uppgifter.",
         "tech": [
             "C#",
-            ".NET Console Application",
-            "Objektorienterad programmering",
+            ".NET Console",
+            "OOP",
             "Filhantering"
         ],
         "highlights": [
@@ -15,19 +15,20 @@
             "Spara data mellan sessioner",
             "Tydlig konsolmeny"
         ],
+        "value": "Visar att jag kan strukturera logik, arbeta objektorienterat och bygga stabil funktionalitet från grunden.",
         "links": {
             "github": "https://github.com/TSOLER89/DagsBokApp"
         }
     },
     {
-        "title": "Rock Paper Scissor – Konsolspel",
-        "type": "backend",
-        "description": "Konsolbaserat sten–sax–påse-spel som visar logik, kontrollflöden och interaktiv programmering.",
+        "title": "Rock Paper Scissor - Konsolspel",
+        "type": "Backend",
+        "description": "Konsolbaserat sten-sax-påse-spel som visar logik, kontrollflöden och interaktiv programmering.",
         "tech": [
             "C#",
-            ".NET Console Application",
-            "If / switch-logik",
-            "Random-klass"
+            ".NET Console",
+            "If / switch",
+            "Random"
         ],
         "highlights": [
             "Spela mot datorn",
@@ -35,14 +36,15 @@
             "Användarvänligt flöde",
             "Tydlig kodstruktur"
         ],
+        "value": "Visar att jag behärskar grundläggande programmeringslogik och kan bygga interaktiva flöden med tydlig struktur.",
         "links": {
             "github": "https://github.com/TSOLER89/RockPaperScissor"
         }
     },
     {
-        "title": "Caffe-Retro-2021 – Mini Web API",
-        "type": "backend",
-        "description": "Mini Web API i C# för hantering av cafédatabas med CRUD-funktionalitet.",
+        "title": "Caffe-Retro-2021 - Mini Web API",
+        "type": "API",
+        "description": "Mini Web API i C# för hantering av cafédata med CRUD-funktionalitet.",
         "tech": [
             "C#",
             "ASP.NET Core Web API",
@@ -55,13 +57,15 @@
             "Testning via Postman",
             "Strukturerad backend-kod"
         ],
+        "value": "Visar att jag kan bygga API:er, arbeta med dataflöden och testa backendfunktionalitet på ett strukturerat sätt.",
         "links": {
             "github": "https://github.com/TSOLER89/Caffe-Retro-2021"
         }
     },
     {
-        "title": "Gala Start – Grupprojekt",
-        "description": "Ett grupprojekt skapat tillsammans med klasskamrater där vi utvecklade en webbapplikation för att hantera evenemang och biljetter. Projektet fokuserade på samarbete, Git, och moderna webbutvecklingstekniker.",
+        "title": "Gala Start - Grupprojekt",
+        "type": "Frontend / Team",
+        "description": "Grupprojekt där vi utvecklade en webbapplikation för att hantera evenemang och biljetter med fokus på samarbete och versionshantering.",
         "tech": [
             "HTML",
             "CSS",
@@ -71,20 +75,21 @@
             "GitHub"
         ],
         "highlights": [
-            "Skapade en interaktiv användarupplevelse med JavaScript",
-            "Implementerade backend-funktioner med Node.js",
-            "Lärde oss teamarbete och versionshantering med Git och GitHub"
+            "Byggde interaktiv användarupplevelse med JavaScript",
+            "Implementerade backendfunktioner med Node.js",
+            "Arbetade i team med Git och GitHub"
         ],
+        "value": "Visar att jag kan samarbeta i team, arbeta i versionshantering och bidra i både frontend och backend.",
         "links": {
-            "github": "https://github.com/sbrindmark/gala-start-main.git",
-            "live": ""
+            "github": "https://github.com/sbrindmark/gala-start-main.git"
         }
     },
     {
         "title": "TUC Booking System",
-        "description": "Ett modernt bokningssystem för grupprum och resurser byggt med .NET 10 och Blazor. Funktioner inkluderar bokning av rum, användarhantering, adminpanel, autentisering, och e-postfunktionalitet.",
+        "type": "Fullstack",
+        "description": "Modernt bokningssystem för grupprum och resurser byggt med .NET och Blazor, med autentisering, adminpanel och e-postfunktionalitet.",
         "tech": [
-            ".NET 10",
+            ".NET",
             "ASP.NET Core",
             "Blazor Server",
             "Entity Framework Core",
@@ -95,11 +100,12 @@
         ],
         "highlights": [
             "Boka och hantera grupprum",
-            "Rollbaserad inloggning (Admin/User)",
-            "Modern UI med Blazor och Bootstrap",
+            "Rollbaserad inloggning för admin och användare",
+            "Adminpanel och användarhantering",
             "E-post för lösenordsåterställning",
             "Swagger-dokumentation för API"
         ],
+        "value": "Visar att jag kan bygga en större fullstacklösning med affärslogik, databas, autentisering och användarflöden.",
         "links": {
             "github": "https://github.com/TSOLER89/TucBookingSystem"
         }
