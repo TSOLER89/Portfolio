@@ -4,30 +4,42 @@ import { renderProjects } from "./pages/projects.js";
 import { renderContact } from "./pages/contact.js";
 
 export function initRouter() {
-    const navLinks = document.querySelectorAll(".nav-links a");
 
     const loadPage = (page) => {
         switch (page) {
             case "home":
                 renderHome();
                 break;
+
             case "about":
                 renderAbout();
                 break;
+
             case "projects":
                 renderProjects();
                 break;
+
             case "contact":
                 renderContact();
                 break;
+
+            default:
+                renderHome();
         }
     };
 
-    navLinks.forEach(link => {
-        link.addEventListener("click", (e) => {
-            e.preventDefault();
-            loadPage(e.target.dataset.page);
-        });
+    document.addEventListener("click", (event) => {
+        const link = event.target.closest("[data-page]");
+
+        if (!link) {
+            return;
+        }
+
+        event.preventDefault();
+
+        const page = link.dataset.page;
+
+        loadPage(page);
     });
 
     loadPage("home");
