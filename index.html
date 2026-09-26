@@ -12,20 +12,38 @@
 
     <header>
         <nav class="navbar">
+
             <h1 class="logo">Min Portfolio</h1>
 
-  <button
-    class="music-toggle"
-    id="musicToggle"
-    type="button"
-    aria-label="Spela bakgrundsmusik"
-    aria-pressed="false"
->
-    <span></span>
-    <span></span>
-    <span></span>
-</button>
+            <!-- Musikknapp -->
+        <button
+            class="music-toggle"
+            id="musicToggle"
+            type="button"
+            aria-label="Spela bakgrundsmusik"
+            aria-pressed="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
+
+        <!-- Mobilmenyknapp -->
+         <button
+            class="mobile-menu-toggle"
+            id="mobileMenuToggle"
+            type="button"
+            aria-label="Öppna meny"
+            aria-expanded="false"
+            aria-controls="navLinks"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Navigeringslänkar -->
 
             <ul class="nav-links" id="navLinks">
                 <li><a href="#" data-page="home">Hem</a></li>
@@ -40,10 +58,11 @@
     <!-- Dynamiskt innehåll laddas här -->
     <main id="app"></main>
 
-    <!-- Flytande logotyper -->
-    <div class="floating-logos" id="floatingLogos"></div>
     <!-- Bakgrundsmusik -->
-    <audio id="bgMusic" src="Assets/Musics/PortfoljoMusic.mp3" loop></audio>
+    <audio id="bgMusic" 
+    src="Assets/Musics/PortfoljoMusic.mp3" 
+    loop>
+    </audio>
 
 
     <footer>
