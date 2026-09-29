@@ -2,6 +2,7 @@
     "title": "JobTrack - Job Application Tracker",
     "type": "Fullstack / Web + Mobile",
     "featured": true,
+    "image": "Assets/Projects/jobtrack.png",
     "description": "En fullstacklösning för att hantera jobbansökningar via både webb och mobil. React-webbappen och React Native-appen använder samma ASP.NET Core Web API och databas.",
     "tech": [
         "React",
@@ -33,6 +34,7 @@
     "title": "TUC Booking System",
     "type": "Fullstack / Grupprojekt",
     "featured": true,
+    "image": "Assets/Projects/tucbookingsystem.png",
     "description": "Ett fullstack-bokningssystem för grupprum och resurser utvecklat som gruppprojekt på TUC. Systemet innehåller autentisering, rumsbokning, konflikthantering, adminfunktioner och e-postflöden.",
     "tech": [
         "C#",
@@ -64,6 +66,7 @@
   "type": "Fullstack / AI",
   "featured": false,
   "status": "Pågående",
+  "image": "Assets/Projects/devpilot.png",
   "description": "En AI-driven utvecklarassistent byggd med React, ASP.NET Core och OpenAI. Applikationen hjälper utvecklare att lära sig och repetera programmeringskoncept genom en interaktiv chatt.",
   "tech": [
     "React",
@@ -92,6 +95,7 @@
     {
         "title": "Rock Paper Scissor - Konsolspel",
         "type": "Backend",
+        "image": "Assets/Projects/rockpaperscissor.png",
         "description": "Konsolbaserat sten-sax-påse-spel som visar logik, kontrollflöden och interaktiv programmering.",
         "tech": [
             "C#",
@@ -113,6 +117,7 @@
     {
         "title": "Caffe-Retro-2021 - Mini Web API",
         "type": "API",
+        "image": "Assets/Projects/caffe-retro-2021.png",
         "description": "Mini Web API i C# för hantering av cafédata med CRUD-funktionalitet.",
         "tech": [
             "C#",
@@ -134,6 +139,7 @@
     {
         "title": "Gala Start - Grupprojekt",
         "type": "Frontend / Team",
+        "image": "Assets/Projects/gala-start.png",
         "description": "Grupprojekt där vi utvecklade en webbapplikation för att hantera evenemang och biljetter med fokus på samarbete och versionshantering.",
         "tech": [
             "HTML",
@@ -157,6 +163,7 @@
     {
     "title": "DagsBokApp - ToDo / Diary App",
     "type": "Backend",
+    "image": "Assets/Projects/dagsbokapp.png",
     "description": "Konsolbaserad C#-applikation för att skapa och hantera dagboksanteckningar och uppgifter.",
     "tech": [
         "C#",
