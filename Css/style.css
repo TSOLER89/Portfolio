@@ -1237,6 +1237,31 @@ header {
     font-size: 0.95rem;
 }
 
+.project-contribution {
+    padding: 0.95rem 1rem;
+
+    border-left: 3px solid #9a6f89;
+    border-radius: 10px;
+
+    background: #faf7f9;
+}
+
+.project-contribution h4 {
+    margin-bottom: 0.3rem;
+
+    color: #7c6674;
+
+    font-size: 0.9rem;
+}
+
+.project-contribution p {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 0.9rem;
+}
+
 
 /* Project tags */
 
@@ -1336,6 +1361,215 @@ header {
     color: #7b345d;
 
     text-align: center;
+}
+
+/* ========================================
+   PROJECT GROUPS
+======================================== */
+
+.projects-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.projects-header .section-kicker {
+    text-align: center;
+}
+
+.project-group {
+    margin-bottom: 4.5rem;
+}
+
+.project-group-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    margin-bottom: 1.5rem;
+}
+
+.project-group-heading .section-kicker {
+    margin-bottom: 0.15rem;
+}
+
+.project-group-heading h3 {
+    margin: 0;
+
+    color: #352f34;
+
+    font-size: 1.55rem;
+    font-weight: 700;
+}
+
+.project-group-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    border-radius: 12px;
+
+    background: #f3eaf0;
+    color: #9a6f89;
+
+    font-size: 1.1rem;
+}
+
+
+/* ========================================
+   FEATURED PROJECTS
+======================================== */
+
+#featuredProjects {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.featured-project {
+    border: 1px solid #dfcdd8;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff 0%,
+            #fffafd 100%
+        );
+
+    box-shadow:
+        0 12px 34px rgba(80, 59, 72, 0.09);
+}
+
+.featured-badge {
+    display: inline-flex;
+    align-items: center;
+
+    margin-right: auto;
+
+    padding: 0.4rem 0.75rem;
+
+    border-radius: 999px;
+
+    background: #f3eaf0;
+    color: #8f667f;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+
+/* ========================================
+   PROJECT CARD TOP
+======================================== */
+
+.project-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 0.75rem;
+
+    min-height: 36px;
+}
+
+
+/* ========================================
+   EARLIER PROJECTS
+======================================== */
+
+.earlier-projects {
+    padding-top: 2rem;
+
+    border-top: 1px solid #eee4e9;
+}
+
+#earlierProjects {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.4rem;
+}
+
+
+/* ========================================
+   PROJECT CARD POLISH
+======================================== */
+
+.project-card {
+    padding: 1.6rem;
+
+    gap: 1.15rem;
+}
+
+.project-card h3 {
+    margin: 0;
+
+    font-size: 1.35rem;
+}
+
+.project-description {
+    margin: 0;
+
+    line-height: 1.7;
+}
+
+.project-value {
+    margin-top: 0.15rem;
+}
+
+.highlights {
+    line-height: 1.6;
+}
+
+.project-links {
+    align-items: center;
+
+    padding-top: 0.5rem;
+}
+
+
+/* ========================================
+   PROJECT RESPONSIVE
+======================================== */
+
+@media (max-width: 1000px) {
+
+    #featuredProjects {
+        grid-template-columns: 1fr;
+    }
+
+    #earlierProjects {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+
+    #featuredProjects,
+    #earlierProjects {
+        grid-template-columns: 1fr;
+    }
+
+    .project-group {
+        margin-bottom: 3rem;
+    }
+
+    .project-card {
+        padding: 1.25rem;
+    }
+
+    .project-card-top {
+        flex-wrap: wrap;
+    }
+
+    .featured-badge {
+        margin-right: 0;
+    }
 }
 
 

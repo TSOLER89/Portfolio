@@ -22,7 +22,7 @@
         "React Native-app med Expo Router och flera skärmar",
         "Webb- och mobilapplikationen delar samma REST API och data"
     ],
-    "value": "Visar att jag kan bygga en sammanhängande fullstacklösning där webb, mobil, API och databas arbetar tillsammans.",
+    "value": "Jag kan bygga en sammanhängande fullstacklösning där webb, mobil, API och databas arbetar tillsammans.",
     "links": {
         "github": "https://github.com/TSOLER89/job-application-tracker",
         "backend": "https://github.com/TSOLER89/job-application-tracker-api",
@@ -30,27 +30,37 @@
     }
 },
 
-    {
-        "title": "DagsBokApp - ToDo / Diary App",
-        "type": "Backend",
-        "description": "Konsolbaserad C#-applikation för att skapa och hantera dagboksanteckningar och uppgifter.",
-        "tech": [
-            "C#",
-            ".NET Console",
-            "OOP",
-            "Filhantering"
-        ],
-        "highlights": [
-            "Skapa, visa och ta bort anteckningar",
-            "Markera uppgifter som färdiga",
-            "Spara data mellan sessioner",
-            "Tydlig konsolmeny"
-        ],
-        "value": "Visar att jag kan strukturera logik, arbeta objektorienterat och bygga stabil funktionalitet från grunden.",
-        "links": {
-            "github": "https://github.com/TSOLER89/DagsBokApp"
-        }
-    },
+   {
+    "title": "TUC Booking System",
+    "type": "Fullstack / Grupprojekt",
+    "featured": true,
+    "description": "Ett fullstack-bokningssystem för grupprum och resurser utvecklat som gruppprojekt på TUC. Systemet innehåller autentisering, rumsbokning, konflikthantering, adminfunktioner och e-postflöden.",
+    "tech": [
+        "C#",
+        ".NET 10",
+        "ASP.NET Core Web API",
+        "Blazor Server",
+        "Entity Framework Core",
+        "SQLite",
+        "JWT",
+        "Bootstrap",
+        "Swagger",
+        "xUnit"
+    ],
+    "highlights": [
+        "REST API för användare, rum och bokningar",
+        "JWT-baserad autentisering och rollstyrning",
+        "Validering för bokningstider, helger och dubbelbokningar",
+        "Adminfunktioner för hantering av rum och användare",
+        "Entity Framework Core med databas och migrations",
+        "Automatiserade tester med xUnit"
+    ],
+    "value": "Visar erfarenhet av att arbeta i ett större teamprojekt med .NET, affärslogik, API-design, autentisering, databas och testning.",
+    "contribution": "Gruppprojekt där jag arbetade som Project Lead och Backend Developer.",
+    "links": {
+        "github": "https://github.com/TSOLER89/TucBookingSystem"
+    }
+},
     {
         "title": "Rock Paper Scissor - Konsolspel",
         "type": "Backend",
@@ -115,30 +125,27 @@
             "github": "https://github.com/sbrindmark/gala-start-main.git"
         }
     },
+
     {
-        "title": "TUC Booking System",
-        "type": "Fullstack",
-        "description": "Modernt bokningssystem för grupprum och resurser byggt med .NET och Blazor, med autentisering, adminpanel och e-postfunktionalitet.",
-        "tech": [
-            ".NET",
-            "ASP.NET Core",
-            "Blazor Server",
-            "Entity Framework Core",
-            "SQLite",
-            "Bootstrap 5",
-            "JWT",
-            "MailKit"
-        ],
-        "highlights": [
-            "Boka och hantera grupprum",
-            "Rollbaserad inloggning för admin och användare",
-            "Adminpanel och användarhantering",
-            "E-post för lösenordsåterställning",
-            "Swagger-dokumentation för API"
-        ],
-        "value": "Visar att jag kan bygga en större fullstacklösning med affärslogik, databas, autentisering och användarflöden.",
-        "links": {
-            "github": "https://github.com/TSOLER89/TucBookingSystem"
-        }
+    "title": "DagsBokApp - ToDo / Diary App",
+    "type": "Backend",
+    "description": "Konsolbaserad C#-applikation för att skapa och hantera dagboksanteckningar och uppgifter.",
+    "tech": [
+        "C#",
+        ".NET Console",
+        "OOP",
+        "Filhantering"
+    ],
+    "highlights": [
+        "Skapa, visa och ta bort anteckningar",
+        "Markera uppgifter som färdiga",
+        "Spara data mellan sessioner",
+        "Tydlig konsolmeny"
+    ],
+    "value": "Visar att jag kan strukturera logik, arbeta objektorienterat och bygga stabil funktionalitet från grunden.",
+    "links": {
+        "github": "https://github.com/TSOLER89/DagsBokApp"
     }
+}
+    
 ]
