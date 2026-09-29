@@ -23,7 +23,7 @@ export function renderHome() {
                     </p>
 
                     <p class="hero-subtext">
-                        Jag studerar Systemutvecklare .NET på TUC i Linköping
+                        Jag studerar Systemutvecklare .NET i Linköping
                         och utvecklar fullstacklösningar där frontend,
                         backend, API:er och användarupplevelse möts.
                     </p>

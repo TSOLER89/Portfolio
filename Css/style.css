@@ -356,39 +356,42 @@ header {
     background: var(--color-primary-light);
     color: #8f667f;
 
-    font-size: 0.85rem;
-    font-weight: 700;
+    font-size: 0.80rem;
+    font-weight: 600;
 
     letter-spacing: 0.04em;
 }
 
 .hero-title {
-    margin-bottom: 1.4rem;
+    margin-bottom: 1.2rem;
 
-    color: var(--color-text);
+    color: #3f3940;
 
-    font-size: clamp(2.6rem, 6vw, 4.8rem);
-    font-weight: 800;
+    font-size: clamp(1.8rem, 3.4vw, 2.8rem);
+    font-weight: 600;
 
-    line-height: 1.05;
-    letter-spacing: -0.04em;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
 }
 
 .hero-title span {
     display: block;
 
-    color: var(--color-primary);
+    color: #a47792;
+    font-weight: 650;
 }
 
 .hero-description {
-    max-width: 620px;
+    max-width: 600px;
 
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
-    color: #4f4650;
+    color: #514951;
 
-    font-size: 1.25rem;
-    line-height: 1.6;
+    font-size: 1rem;
+    line-height: 1.7;
+
+    font-weight: 400;
 }
 
 .hero-subtext {
@@ -632,83 +635,107 @@ header {
 ======================================== */
 
 .about-intro {
-    max-width: 1000px;
+    max-width: 900px;
 
-    margin: 2rem auto;
-    padding: 3rem 1rem;
+    margin: 2.5rem auto;
+    padding: 2.2rem 2.5rem;
 
-    border-radius: 16px;
+    border: 1px solid #eadfe5;
+    border-radius: 20px;
 
-    background: linear-gradient(
-        180deg,
-        #ffffff 0%,
-        #fdf8fb 100%
-    );
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #fdf8fb 100%
+        );
 
-    box-shadow: 0 6px 24px rgba(184, 111, 174, 0.1);
-}
-
-.about-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    gap: 2rem;
-}
-
-.about-image {
-    width: 180px;
-    height: 180px;
-
-    object-fit: cover;
-
-    border-radius: 50%;
-
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow:
+        0 12px 36px rgba(80, 59, 72, 0.08);
 }
 
 .about-text {
-    text-align: center;
+    text-align: left;
+}
 
-    line-height: 1.7;
+.about-text .section-kicker {
+    margin-bottom: 0.6rem;
+}
+
+.about-text h2 {
+    max-width: 700px;
+
+    margin-bottom: 1.2rem;
+
+    color:  #4a4248;
+
+    font-size: clamp(1.5rem, 2.2vw, 2rem);
+    font-weight: 600;
+
+    line-height: 1.25;
 }
 
 .about-text p {
-    margin-bottom: 0.9rem;
+    max-width: 760px;
 
-    color: #444;
+    margin-bottom: 1rem;
+
+    color: #5f5860;
+
+    font-size: 1rem;
+    line-height: 1.8;
 }
 
+.about-text .about-lead {
+    color: #4f4650;
 
-/* ========================================
-   GENERAL SECTION HEADERS
-======================================== */
-
-.section-header {
-    margin-bottom: 1.2rem;
+    font-size: 1.08rem;
+    font-weight: 500;
 }
 
-.section-kicker {
-    margin-bottom: 0.35rem;
+.about-meta {
+    display: flex;
+    flex-wrap: wrap;
 
-    color: #94a3b8;
+    gap: 0.6rem;
 
-    font-size: 0.72rem;
-    font-weight: 700;
-
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    margin-top: 1.5rem;
 }
 
-.section-header h3 {
-    color: #8a6f82;
+.about-meta span {
+    padding: 0.45rem 0.8rem;
 
-    font-size: 1.8rem;
-    font-weight: 700;
+    border: 1px solid #eadfe5;
+    border-radius: 999px;
 
-    letter-spacing: 1px;
+    background: #f3eaf0;
+    color: #7c6674;
+
+    font-size: 0.82rem;
+    font-weight: 600;
 }
 
+@media (max-width: 768px) {
+
+    .about-intro {
+        margin: 2rem 1rem;
+        padding: 2rem 1.3rem;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-text h2,
+    .about-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-meta {
+        justify-content: center;
+    }
+}
 
 /* ========================================
    SKILLS

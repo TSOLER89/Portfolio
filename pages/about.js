@@ -8,14 +8,59 @@ export function renderAbout() {
 
     app.innerHTML = `
         <section class="about-intro">
-            <div class="about-content">
-                <img src="Assets/Photos/CvBild.jpg" alt="Tsoler Hayitian" class="about-image">
-                <div class="about-text">
-                    <p>Jag studerar till <strong>systemutvecklare</strong> och drivs av att förstå hur teknik kan lösa riktiga problem.</p>
-                    <p>Jag är en engagerad och nyfiken utvecklarstudent som gillar att bygga användarvänliga lösningar, arbeta strukturerat och fortsätta utvecklas inom både frontend och backend.</p>
-                </div>
+
+        <div class="about-text">
+
+            <p class="section-kicker">
+                Om mig
+            </p>
+
+            <h2>
+                Systemutvecklare .NET med fokus på fullstack
+            </h2>
+
+            <p class="about-lead">
+                Jag studerar Systemutvecklare .NET på TUC Yrkeshögskola i Linköping
+                och tycker om att bygga lösningar där frontend,
+                backend och API:er fungerar tillsammans.
+            </p>
+
+            <p>
+                Under utbildningen har jag arbetat med bland annat
+                C#, .NET, React, Blazor och React Native.
+                Jag gillar att förstå hela flödet i en applikation –
+                från användargränssnitt och affärslogik till API,
+                databas och integrationer.
+            </p>
+
+            <p>
+                Jag utvecklas bäst när jag får kombinera problemlösning,
+                struktur och kreativitet och arbetar gärna i team där
+                man lär av varandra och bygger lösningar steg för steg.
+            </p>
+
+
+            <div class="about-meta">
+
+                <span>
+                    Systemutvecklare .NET
+                </span>
+
+                <span>
+                    Fullstack
+                </span>
+
+                <span>
+                    LIA 1: Consid AB
+                </span>
+
             </div>
+
+        </div>
+
         </section>
+
+</section>
 
         <section class="lia-section">
             <div class="section-header">
