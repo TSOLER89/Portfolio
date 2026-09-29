@@ -34,7 +34,7 @@
     "title": "TUC Booking System",
     "type": "Fullstack / Grupprojekt",
     "featured": true,
-    "image": "Assets/Projects/tucbookingsystem.png",
+    "image": "Assets/Projects/tuc-booking.png",
     "description": "Ett fullstack-bokningssystem för grupprum och resurser utvecklat som gruppprojekt på TUC. Systemet innehåller autentisering, rumsbokning, konflikthantering, adminfunktioner och e-postflöden.",
     "tech": [
         "C#",
@@ -95,7 +95,7 @@
     {
         "title": "Rock Paper Scissor - Konsolspel",
         "type": "Backend",
-        "image": "Assets/Projects/rockpaperscissor.png",
+        "image": "Assets/Projects/rock-paper-scissor.png",
         "description": "Konsolbaserat sten-sax-påse-spel som visar logik, kontrollflöden och interaktiv programmering.",
         "tech": [
             "C#",
@@ -117,7 +117,7 @@
     {
         "title": "Caffe-Retro-2021 - Mini Web API",
         "type": "API",
-        "image": "Assets/Projects/caffe-retro-2021.png",
+        "image": "Assets/Projects/caffe-retro.png",
         "description": "Mini Web API i C# för hantering av cafédata med CRUD-funktionalitet.",
         "tech": [
             "C#",

@@ -4,6 +4,8 @@ export function renderProjects() {
     app.innerHTML = `
         <section class="projects-section">
 
+            <!-- SIDHUVUD -->
+
             <div class="section-header projects-header">
                 <p class="section-kicker">Portfolio</p>
 
@@ -16,12 +18,15 @@ export function renderProjects() {
             </div>
 
 
-            <!-- UTVALDA PROJEKT -->
+            <!-- ========================================
+                 UTVALDA PROJEKT
+            ======================================== -->
 
             <section
                 id="featuredProjectsSection"
                 class="project-group"
             >
+
                 <div class="project-group-heading">
 
                     <span class="project-group-icon">
@@ -40,6 +45,7 @@ export function renderProjects() {
 
                 </div>
 
+
                 <div
                     id="featuredProjects"
                     class="projects-container"
@@ -48,12 +54,15 @@ export function renderProjects() {
             </section>
 
 
-            <!-- PÅGÅENDE PROJEKT -->
+            <!-- ========================================
+                 PÅGÅENDE PROJEKT
+            ======================================== -->
 
             <section
                 id="ongoingProjectsSection"
                 class="project-group ongoing-projects"
             >
+
                 <div class="project-group-heading">
 
                     <span class="project-group-icon ongoing-icon">
@@ -72,6 +81,7 @@ export function renderProjects() {
 
                 </div>
 
+
                 <div
                     id="ongoingProjects"
                     class="projects-container"
@@ -80,12 +90,15 @@ export function renderProjects() {
             </section>
 
 
-            <!-- TIDIGARE PROJEKT -->
+            <!-- ========================================
+                 TIDIGARE PROJEKT
+            ======================================== -->
 
             <section
                 id="earlierProjectsSection"
                 class="project-group earlier-projects"
             >
+
                 <div class="project-group-heading">
 
                     <div>
@@ -100,6 +113,7 @@ export function renderProjects() {
 
                 </div>
 
+
                 <div
                     id="earlierProjects"
                     class="projects-container"
@@ -112,6 +126,7 @@ export function renderProjects() {
 
 
     fetch("Data/db.json")
+
         .then(response => {
 
             if (!response.ok) {
@@ -122,6 +137,7 @@ export function renderProjects() {
 
             return response.json();
         })
+
 
         .then(projects => {
 
@@ -157,7 +173,9 @@ export function renderProjects() {
                 );
 
 
-            /* Utvalda */
+            /* ========================================
+               SORTERA PROJEKT
+            ======================================== */
 
             const featuredProjects =
                 projects.filter(
@@ -165,8 +183,6 @@ export function renderProjects() {
                         project.featured === true
                 );
 
-
-            /* Pågående */
 
             const ongoingProjects =
                 projects.filter(
@@ -176,8 +192,6 @@ export function renderProjects() {
                 );
 
 
-            /* Tidigare */
-
             const earlierProjects =
                 projects.filter(
                     project =>
@@ -186,43 +200,55 @@ export function renderProjects() {
                 );
 
 
+            /* ========================================
+               UTVALDA
+            ======================================== */
+
             featuredProjects.forEach(project => {
 
                 featuredContainer.appendChild(
                     createProjectCard(
                         project,
-                        true
+                        "featured"
                     )
                 );
 
             });
 
+
+            /* ========================================
+               PÅGÅENDE
+            ======================================== */
 
             ongoingProjects.forEach(project => {
 
                 ongoingContainer.appendChild(
                     createProjectCard(
                         project,
-                        false
+                        "ongoing"
                     )
                 );
 
             });
 
+
+            /* ========================================
+               TIDIGARE
+            ======================================== */
 
             earlierProjects.forEach(project => {
 
                 earlierContainer.appendChild(
                     createProjectCard(
                         project,
-                        false
+                        "compact"
                     )
                 );
 
             });
 
 
-            /* Dölj tomma sektioner */
+            /* Dölj tomma grupper */
 
             if (featuredProjects.length === 0) {
                 featuredSection.style.display =
@@ -240,6 +266,7 @@ export function renderProjects() {
             }
 
         })
+
 
         .catch(error => {
 
@@ -263,49 +290,108 @@ export function renderProjects() {
 }
 
 
+/* ========================================
+   CREATE PROJECT CARD
+======================================== */
 
 function createProjectCard(
     project,
-    isFeatured
+    variant
 ) {
 
     const card =
         document.createElement("article");
+
 
     card.classList.add(
         "project-card"
     );
 
 
-    if (isFeatured) {
+    if (variant === "featured") {
         card.classList.add(
             "featured-project"
         );
     }
 
 
-    if (project.status === "Pågående") {
+    if (variant === "ongoing") {
         card.classList.add(
             "ongoing-project-card"
         );
     }
 
 
+    if (variant === "compact") {
+        card.classList.add(
+            "compact-project-card"
+        );
+    }
+
+
+    /* ========================================
+       IMAGE
+    ======================================== */
+
+    const image =
+        project.image
+            ? `
+                <div class="project-image-wrapper">
+
+                    <img
+                        src="${project.image}"
+                        alt="Projektbild för ${project.title}"
+                        class="project-image"
+                        loading="lazy"
+                    >
+
+                </div>
+            `
+            : "";
+
+
+    /* ========================================
+       TECH TAGS
+    ======================================== */
+
     const techTags =
-        project.tech
-            .map(
-                item =>
-                    `<span class="tag">${item}</span>`
-            )
+        (project.tech || [])
+            .map(item => `
+                <span class="tag">
+                    ${item}
+                </span>
+            `)
             .join("");
 
 
+    /* ========================================
+       TIDIGARE PROJEKT
+       Mindre information
+    ======================================== */
+
+    if (variant === "compact") {
+
+        return createCompactProjectCard(
+            card,
+            project,
+            image,
+            techTags
+        );
+
+    }
+
+
+    /* ========================================
+       FEATURED / ONGOING
+    ======================================== */
+
     const highlights =
-        project.highlights
-            .map(
-                item =>
-                    `<li>${item}</li>`
-            )
+        (project.highlights || [])
+            .map(item => `
+                <li>
+                    ${item}
+                </li>
+            `)
             .join("");
 
 
@@ -315,93 +401,124 @@ function createProjectCard(
 
     card.innerHTML = `
 
-        <div class="project-card-top">
+        ${image}
 
-            <div class="project-badges">
 
-                ${
-                    isFeatured
-                        ? `
-                            <span class="featured-badge">
-                                Utvalt projekt
-                            </span>
-                        `
-                        : ""
-                }
+        <div class="project-card-content">
 
-                ${
-                    project.status === "Pågående"
-                        ? `
-                            <span class="project-status-badge">
-                                Pågående
-                            </span>
-                        `
-                        : ""
-                }
+
+            <div class="project-card-top">
+
+                <div class="project-badges">
+
+                    ${
+                        variant === "featured"
+                            ? `
+                                <span class="featured-badge">
+                                    Utvalt projekt
+                                </span>
+                            `
+                            : ""
+                    }
+
+
+                    ${
+                        variant === "ongoing"
+                            ? `
+                                <span class="project-status-badge">
+                                    Pågående
+                                </span>
+                            `
+                            : ""
+                    }
+
+                </div>
+
+
+                <span class="project-type">
+                    ${project.type || "Projekt"}
+                </span>
 
             </div>
 
 
-            <span class="project-type">
-                ${project.type || "Projekt"}
-            </span>
-
-        </div>
+            <h3>
+                ${project.title}
+            </h3>
 
 
-        <h3>
-            ${project.title}
-        </h3>
-
-
-        <p class="project-description">
-            ${project.description}
-        </p>
-
-
-        <div class="tags">
-            ${techTags}
-        </div>
-
-
-        <div class="project-value">
-
-            <h4>
-                Det här visar
-            </h4>
-
-            <p>
-                ${project.value}
+            <p class="project-description">
+                ${project.description || ""}
             </p>
 
+
+            <div class="tags">
+                ${techTags}
+            </div>
+
+
+            ${
+                variant === "featured" &&
+                project.value
+
+                    ? `
+                        <div class="project-value">
+
+                            <h4>
+                                Det här visar
+                            </h4>
+
+                            <p>
+                                ${project.value}
+                            </p>
+
+                        </div>
+                    `
+
+                    : ""
+            }
+
+
+            ${
+                variant === "featured" &&
+                project.contribution
+
+                    ? `
+                        <div class="project-contribution">
+
+                            <h4>
+                                Mitt bidrag
+                            </h4>
+
+                            <p>
+                                ${project.contribution}
+                            </p>
+
+                        </div>
+                    `
+
+                    : ""
+            }
+
+
+            ${
+                variant === "featured" &&
+                highlights
+
+                    ? `
+                        <ul class="highlights">
+                            ${highlights}
+                        </ul>
+                    `
+
+                    : ""
+            }
+
+
+            ${links}
+
+
         </div>
-
-
-        ${
-            project.contribution
-                ? `
-                    <div class="project-contribution">
-
-                        <h4>
-                            Mitt bidrag
-                        </h4>
-
-                        <p>
-                            ${project.contribution}
-                        </p>
-
-                    </div>
-                `
-                : ""
-        }
-
-
-        <ul class="highlights">
-            ${highlights}
-        </ul>
-
-
-        ${links}
     `;
 
 
@@ -409,6 +526,75 @@ function createProjectCard(
 }
 
 
+/* ========================================
+   COMPACT PROJECT CARD
+======================================== */
+
+function createCompactProjectCard(
+    card,
+    project,
+    image,
+    techTags
+) {
+
+    const githubLink =
+        project.links?.github
+
+            ? `
+                <a
+                    href="${project.links.github}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="compact-project-link"
+                >
+                    GitHub →
+                </a>
+            `
+
+            : "";
+
+
+    card.innerHTML = `
+
+        ${image}
+
+
+        <div class="project-card-content">
+
+
+            <div class="compact-project-header">
+
+                <span class="project-type">
+                    ${project.type || "Projekt"}
+                </span>
+
+
+                <h3>
+                    ${project.title}
+                </h3>
+
+            </div>
+
+
+            <div class="tags compact-tags">
+                ${techTags}
+            </div>
+
+
+            ${githubLink}
+
+
+        </div>
+    `;
+
+
+    return card;
+}
+
+
+/* ========================================
+   CREATE PROJECT LINKS
+======================================== */
 
 function createProjectLinks(project) {
 
@@ -418,10 +604,14 @@ function createProjectLinks(project) {
         project.links || {};
 
 
+    /* Web / GitHub */
+
     if (links.github) {
 
         const githubLabel =
-            links.backend || links.mobile
+            links.backend ||
+            links.mobile
+
                 ? "Web GitHub"
                 : "GitHub";
 
@@ -440,6 +630,8 @@ function createProjectLinks(project) {
     }
 
 
+    /* API */
+
     if (links.backend) {
 
         projectLinks.push(`
@@ -456,6 +648,8 @@ function createProjectLinks(project) {
     }
 
 
+    /* Mobile */
+
     if (links.mobile) {
 
         projectLinks.push(`
@@ -471,6 +665,8 @@ function createProjectLinks(project) {
 
     }
 
+
+    /* Live */
 
     if (links.live) {
 
