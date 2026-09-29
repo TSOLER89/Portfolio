@@ -16,11 +16,10 @@
         "REST API"
     ],
     "highlights": [
-        "Skapa, redigera och ta bort jobbansökningar",
-        "Sökning, filtrering och statistik i webbapplikationen",
-        "Bildval och bilduppladdning från både webb och mobil",
-        "React Native-app med Expo Router och flera skärmar",
-        "Webb- och mobilapplikationen delar samma REST API och data"
+        "CRUD för jobbansökningar med sökning, filtrering och statistik",
+        "React-webbapp och React Native-app mot samma REST API",
+        "Bilduppladdning från både webb och mobil",
+        "ASP.NET Core, Entity Framework Core och SQL Server"
     ],
     "value": "Jag kan bygga en sammanhängande fullstacklösning där webb, mobil, API och databas arbetar tillsammans.",
     "links": {
@@ -49,11 +48,9 @@
     ],
     "highlights": [
         "REST API för användare, rum och bokningar",
-        "JWT-baserad autentisering och rollstyrning",
-        "Validering för bokningstider, helger och dubbelbokningar",
-        "Adminfunktioner för hantering av rum och användare",
-        "Entity Framework Core med databas och migrations",
-        "Automatiserade tester med xUnit"
+        "JWT-autentisering och rollbaserad behörighet",
+        "Validering av tider, helger och dubbelbokningar",
+        "Entity Framework Core, migrations och automatiserade tester"
     ],
     "value": "Visar erfarenhet av att arbeta i ett större teamprojekt med .NET, affärslogik, API-design, autentisering, databas och testning.",
     "contribution": "Gruppprojekt där jag arbetade som Project Lead och Backend Developer.",
