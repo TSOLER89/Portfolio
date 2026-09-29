@@ -64,6 +64,36 @@ button {
 
 
 /* ========================================
+   GENERAL SECTION HEADERS
+======================================== */
+
+.section-header {
+    margin-bottom: 1.4rem;
+}
+
+.section-kicker {
+    margin-bottom: 0.35rem;
+
+    color: #9a8191;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.section-header h3 {
+    color: #4a4248;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+
+/* ========================================
    NAVIGATION
 ======================================== */
 
@@ -201,7 +231,7 @@ header {
 }
 
 
-/* Animation only when music plays */
+/* Music animation */
 
 .music-toggle.playing span {
     animation: musicEqualizer 0.8s ease-in-out infinite;
@@ -356,53 +386,66 @@ header {
     background: var(--color-primary-light);
     color: #8f667f;
 
-    font-size: 0.80rem;
+    font-size: 0.8rem;
     font-weight: 600;
 
     letter-spacing: 0.04em;
 }
 
+
+/*
+   "Hej, jag är" är mindre.
+   Namnet i span är större.
+*/
+
 .hero-title {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.3rem;
 
     color: #3f3940;
 
-    font-size: clamp(1.8rem, 3.4vw, 2.8rem);
+    font-size: clamp(1.8rem, 3.2vw, 2.7rem);
     font-weight: 600;
 
-    line-height: 1.12;
+    line-height: 1.1;
     letter-spacing: -0.02em;
 }
 
 .hero-title span {
     display: block;
 
+    margin-top: 0.2rem;
+
     color: #a47792;
-    font-weight: 650;
+
+    font-size: clamp(2.5rem, 4.6vw, 3.8rem);
+    font-weight: 600;
+
+    line-height: 1.06;
+}
+
+
+/* Samma storlek på "Jag bygger" och "Jag studerar" */
+
+.hero-description,
+.hero-subtext {
+    max-width: 620px;
+
+    font-size: 1rem;
+    font-weight: 400;
+
+    line-height: 1.75;
 }
 
 .hero-description {
-    max-width: 600px;
-
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
 
     color: #514951;
-
-    font-size: 1rem;
-    line-height: 1.7;
-
-    font-weight: 400;
 }
 
 .hero-subtext {
-    max-width: 600px;
-
     margin-bottom: 2rem;
 
     color: var(--color-text-soft);
-
-    font-size: 1rem;
-    line-height: 1.8;
 }
 
 
@@ -501,7 +544,8 @@ header {
 .hero .btn-primary {
     background: #8f7482;
 
-    box-shadow: 0 8px 24px rgba(143, 116, 130, 0.22);
+    box-shadow:
+        0 8px 24px rgba(143, 116, 130, 0.22);
 }
 
 .hero .btn-primary:hover {
@@ -509,7 +553,8 @@ header {
 
     transform: translateY(-2px);
 
-    box-shadow: 0 12px 28px rgba(143, 116, 130, 0.3);
+    box-shadow:
+        0 12px 28px rgba(143, 116, 130, 0.3);
 }
 
 
@@ -584,7 +629,8 @@ header {
     border: 6px solid rgba(255, 255, 255, 0.8);
     border-radius: 28px;
 
-    box-shadow: 0 24px 60px rgba(80, 59, 72, 0.18);
+    box-shadow:
+        0 24px 60px rgba(80, 59, 72, 0.18);
 }
 
 
@@ -620,7 +666,8 @@ header {
 
     background: rgba(255, 255, 255, 0.86);
 
-    box-shadow: 0 8px 24px rgba(40, 30, 38, 0.12);
+    box-shadow:
+        0 8px 24px rgba(40, 30, 38, 0.12);
 
     opacity: 0.9;
 
@@ -667,7 +714,7 @@ header {
 
     margin-bottom: 1.2rem;
 
-    color:  #4a4248;
+    color: #4a4248;
 
     font-size: clamp(1.5rem, 2.2vw, 2rem);
     font-weight: 600;
@@ -689,9 +736,12 @@ header {
 .about-text .about-lead {
     color: #4f4650;
 
-    font-size: 1.08rem;
+    font-size: 1.05rem;
     font-weight: 500;
 }
+
+
+/* About tags */
 
 .about-meta {
     display: flex;
@@ -715,31 +765,296 @@ header {
     font-weight: 600;
 }
 
-@media (max-width: 768px) {
-
-    .about-intro {
-        margin: 2rem 1rem;
-        padding: 2rem 1.3rem;
-    }
-
-    .about-text {
-        text-align: center;
-    }
-
-    .about-text h2,
-    .about-text p {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .about-meta {
-        justify-content: center;
-    }
-}
 
 /* ========================================
-   SKILLS
+   EXPERIENCE
 ======================================== */
+
+.experience-section {
+    max-width: 1000px;
+
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.experience-header {
+    margin-bottom: 1.5rem;
+}
+
+.experience-header h3 {
+    color: #4a4248;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+
+/* Experience card */
+
+.experience-card {
+    padding: 2rem;
+
+    border: 1px solid #eadfe5;
+    border-radius: 18px;
+
+    background: var(--color-white);
+
+    box-shadow:
+        0 10px 30px rgba(80, 59, 72, 0.08);
+}
+
+.experience-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 2rem;
+
+    margin-bottom: 0.7rem;
+}
+
+.experience-company {
+    margin-bottom: 0.3rem;
+
+    color: #9a6f89;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.experience-card h4 {
+    margin-bottom: 0.2rem;
+
+    color: #352f34;
+
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+.experience-project {
+    color: #706871;
+}
+
+.experience-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    gap: 0.45rem;
+}
+
+.experience-date {
+    color: #827982;
+
+    font-size: 0.82rem;
+}
+
+
+/* ========================================
+   EXPERIENCE STATUS
+======================================== */
+
+.experience-status {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 0.35rem 0.75rem;
+
+    border-radius: 999px;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.experience-status.completed {
+    background: #e7f6ed;
+    color: #34704d;
+}
+
+.experience-status.upcoming {
+    background: #f3eaf0;
+    color: #8f667f;
+}
+
+
+/* ========================================
+   EXPERIENCE TIMELINE / PROGRESS BAR
+======================================== */
+
+.experience-timeline {
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+
+    margin: 1.3rem 0 2rem;
+}
+
+.timeline-date {
+    flex-shrink: 0;
+
+    color: #706871;
+
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+.timeline-track {
+    position: relative;
+
+    flex: 1;
+
+    height: 9px;
+
+    overflow: hidden;
+
+    border-radius: 999px;
+
+    background: #eee7eb;
+}
+
+.timeline-fill {
+    height: 100%;
+
+    border-radius: inherit;
+}
+
+.timeline-fill.completed {
+    width: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #c39aae,
+            #9a6f89
+        );
+}
+
+.timeline-fill.upcoming {
+    width: 8%;
+
+    background: #cdb7c4;
+}
+
+
+/* Experience description */
+
+.experience-description {
+    max-width: 850px;
+
+    margin-bottom: 2rem;
+
+    color: #5f5860;
+
+    line-height: 1.75;
+}
+
+
+/* Experience content */
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+
+    gap: 2rem;
+}
+
+.experience-column h5 {
+    margin-bottom: 0.9rem;
+
+    color: #5d4f58;
+
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.experience-column ul {
+    padding-left: 1.2rem;
+}
+
+.experience-column li {
+    margin-bottom: 0.6rem;
+
+    color: #555;
+
+    line-height: 1.6;
+}
+
+
+/* Experience technology tags */
+
+.experience-tech {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 0.5rem;
+}
+
+.experience-tech span {
+    padding: 0.4rem 0.7rem;
+
+    border-radius: 999px;
+
+    background: #f3eaf0;
+    color: #7c6674;
+
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+
+/* ========================================
+   NEXT STEP / LIA 2
+======================================== */
+
+.next-step-section {
+    max-width: 1000px;
+
+    margin: 2rem auto 3rem;
+    padding: 0 1rem;
+}
+
+.next-step-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 2rem;
+
+    padding: 1.5rem 1.6rem;
+
+    border: 1px solid #eadfe5;
+    border-radius: 16px;
+
+    background: #faf7f9;
+}
+
+.next-step-content {
+    flex: 1;
+}
+
+.next-step-card h4 {
+    margin-bottom: 0.4rem;
+
+    color: #4a4248;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.next-step-card p {
+    margin: 0;
+
+    color: #706871;
+}
+
+.next-step-timeline {
+    margin-top: 1.2rem;
+    margin-bottom: 0;
+}
+
 
 /* ========================================
    SKILLS
@@ -772,8 +1087,8 @@ header {
 
     color: #8a6f82;
 
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.8rem;
+    font-weight: 600;
 }
 
 .skills-intro {
@@ -785,7 +1100,7 @@ header {
 }
 
 
-/* Grid */
+/* Skills grid */
 
 .skills-grid {
     display: grid;
@@ -796,7 +1111,7 @@ header {
 }
 
 
-/* Category card */
+/* Skill category */
 
 .skill-category {
     padding: 1.5rem;
@@ -804,7 +1119,7 @@ header {
     border: 1px solid #eadfe5;
     border-radius: 16px;
 
-    background: #ffffff;
+    background: var(--color-white);
 
     box-shadow:
         0 8px 24px rgba(80, 59, 72, 0.07);
@@ -815,8 +1130,8 @@ header {
 
     color: #5d4f58;
 
-    font-size: 1.1rem;
-    font-weight: 700;
+    font-size: 1.05rem;
+    font-weight: 600;
 }
 
 
@@ -845,239 +1160,6 @@ header {
 }
 
 
-/* Mobile */
-
-@media (max-width: 768px) {
-
-    .skills-section {
-        margin: 2rem auto;
-        padding: 2.5rem 1rem;
-    }
-
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .skill-category {
-        padding: 1.25rem;
-    }
-}
-
-
-/* ========================================
-   LIA
-======================================== */
-
-.lia-section {
-    margin: 2rem auto;
-    padding: 2.2rem 1.2rem;
-
-    max-width: 1000px;
-
-    border: 1px solid #e8d3e2;
-    border-radius: 15px;
-
-    background: linear-gradient(
-        180deg,
-        #f9f3f7 0%,
-        #f4f4f4 100%
-    );
-
-    box-shadow: 0 6px 24px rgba(184, 111, 174, 0.12);
-
-    text-align: center;
-}
-
-.lia-section h3 {
-    margin-bottom: 1rem;
-
-    color: #b86fae;
-
-    font-size: 1.8rem;
-    font-weight: 700;
-}
-
-.lia-section p {
-    margin-bottom: 1.5rem;
-
-    color: #4f4f4f;
-
-    font-size: 1rem;
-}
-
-.lia-card {
-    padding: 1.2rem;
-
-    border: 1px solid #e7dde3;
-    border-radius: 16px;
-
-    background: var(--color-white);
-
-    box-shadow: 0 8px 24px rgba(138, 111, 130, 0.08);
-}
-
-.lia-card-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 1rem;
-
-    margin-bottom: 1rem;
-}
-
-.lia-card-top .lia-badge {
-    margin-left: auto;
-}
-
-.lia-card-title {
-    color: #1f2937;
-
-    font-size: 1rem;
-    font-weight: 700;
-}
-
-.lia-badge {
-    padding: 0.35rem 0.7rem;
-
-    border-radius: 999px;
-
-    font-size: 0.7rem;
-    font-weight: 700;
-
-    white-space: nowrap;
-}
-
-.lia-badge.completed {
-    background: #d1fae5;
-    color: #065f46;
-}
-
-.lia-badge.upcoming {
-    background: #f1f5f9;
-    color: #64748b;
-}
-
-
-/* Timeline */
-
-.lia-timeline {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    gap: 1rem;
-}
-
-.lia-start,
-.lia-end {
-    color: #027a98;
-
-    font-weight: 600;
-}
-
-.lia-bar {
-    position: relative;
-
-    flex: 1;
-
-    max-width: 400px;
-    height: 12px;
-
-    overflow: hidden;
-
-    border-radius: 10px;
-
-    background: #dddddd;
-}
-
-.lia-progress {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    border-radius: 10px;
-
-    background: linear-gradient(
-        135deg,
-        #b86fae,
-        #cd306e
-    );
-
-    animation: liaFill 2s ease forwards;
-}
-
-.lia-progress-upcoming {
-    width: 0;
-
-    animation: none;
-}
-
-@keyframes liaFill {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%;
-    }
-}
-
-
-/* LIA experience */
-
-.lia-experience {
-    max-width: 900px;
-
-    margin: 1.5rem auto 0;
-
-    text-align: left;
-}
-
-.experience-item {
-    margin-bottom: 1rem;
-    padding: 1.1rem 1rem;
-
-    border-left: 4px solid #cd306e;
-    border-radius: 10px;
-
-    background: var(--color-white);
-
-    box-shadow: 0 4px 14px rgba(184, 111, 174, 0.12);
-}
-
-.experience-item h4 {
-    margin-bottom: 0.7rem;
-
-    color: #b86fae;
-
-    font-size: 1.1rem;
-}
-
-.experience-item ul {
-    padding-left: 1.2rem;
-
-    line-height: 1.75;
-}
-
-.experience-item li {
-    margin-bottom: 0.5rem;
-
-    color: #4f4f4f;
-}
-
-.lia-tech {
-    margin-bottom: 0;
-
-    font-size: 0.97rem;
-    line-height: 1.75;
-}
-
-
 /* ========================================
    HOBBIES
 ======================================== */
@@ -1085,8 +1167,8 @@ header {
 .about-hobbies {
     max-width: 900px;
 
-    margin: 2rem auto;
-    padding: 3rem 1rem;
+    margin: 2rem auto 3rem;
+    padding: 2.5rem 1rem;
 
     border-radius: 14px;
 
@@ -1096,7 +1178,8 @@ header {
 
     text-align: center;
 
-    box-shadow: 0 4px 18px rgba(184, 111, 174, 0.12);
+    box-shadow:
+        0 4px 18px rgba(184, 111, 174, 0.12);
 }
 
 .hobbies-grid {
@@ -1136,11 +1219,12 @@ header {
 
     border-radius: 12px;
 
-    background: linear-gradient(
-        135deg,
-        #f7d7e8,
-        #f1e5f8
-    );
+    background:
+        linear-gradient(
+            135deg,
+            #f7d7e8,
+            #f1e5f8
+        );
 
     color: #b86fae;
 
@@ -1212,28 +1296,33 @@ header {
 
 .projects-container {
     display: grid;
+
     grid-template-columns:
         repeat(auto-fit, minmax(280px, 1fr));
 
     gap: 1rem;
 }
 
+
+/* Project card */
+
 .project-card {
     display: flex;
     flex-direction: column;
 
-    gap: 1rem;
+    gap: 1.15rem;
 
     min-width: 0;
 
-    padding: 1.2rem 1.5rem;
+    padding: 1.6rem;
 
     border: 1px solid #ece3e8;
     border-radius: 1rem;
 
     background: var(--color-white);
 
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    box-shadow:
+        0 4px 16px rgba(0, 0, 0, 0.1);
 
     font-size: 0.95rem;
 
@@ -1248,12 +1337,18 @@ header {
 
     border-color: #d8c6d0;
 
-    box-shadow: 0 16px 40px rgba(160, 129, 149, 0.18);
+    box-shadow:
+        0 16px 40px rgba(160, 129, 149, 0.18);
 }
 
 .project-card-top {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 0.75rem;
+
+    min-height: 36px;
 }
 
 .project-type {
@@ -1275,6 +1370,8 @@ header {
 }
 
 .project-card h3 {
+    margin: 0;
+
     color: #8a6f82;
 
     font-size: 1.35rem;
@@ -1288,6 +1385,15 @@ header {
 
     font-size: 0.95rem;
 }
+
+.project-description {
+    margin: 0;
+
+    line-height: 1.7;
+}
+
+
+/* Project contribution */
 
 .project-contribution {
     padding: 0.95rem 1rem;
@@ -1329,33 +1435,37 @@ header {
 
     border-radius: 15px;
 
-    background: linear-gradient(
-        135deg,
-        #b8a0ad,
-        #b88ca0
-    );
+    background:
+        linear-gradient(
+            135deg,
+            #b8a0ad,
+            #b88ca0
+        );
 
     color: var(--color-white);
 
     font-size: 0.8rem;
 
-    box-shadow: 0 2px 8px rgba(168, 140, 156, 0.16);
+    box-shadow:
+        0 2px 8px rgba(168, 140, 156, 0.16);
 }
 
 
 /* Project value */
 
 .project-value {
+    margin-top: 0.15rem;
     padding: 0.95rem 1rem;
 
     border: 1px solid #eee3e8;
     border-radius: 14px;
 
-    background: linear-gradient(
-        180deg,
-        #fff8fc 0%,
-        #ffffff 100%
-    );
+    background:
+        linear-gradient(
+            180deg,
+            #fff8fc 0%,
+            #ffffff 100%
+        );
 }
 
 .project-value h4 {
@@ -1380,6 +1490,8 @@ header {
     padding-left: 0;
 
     list-style: none;
+
+    line-height: 1.6;
 }
 
 .highlights li {
@@ -1398,13 +1510,18 @@ header {
     color: #b88ca0;
 }
 
+
+/* Project links */
+
 .project-links {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 
     gap: 0.75rem;
 
     margin-top: auto;
+    padding-top: 0.5rem;
 }
 
 .projects-error {
@@ -1415,12 +1532,14 @@ header {
     text-align: center;
 }
 
+
 /* ========================================
    PROJECT GROUPS
 ======================================== */
 
 .projects-header {
     margin-bottom: 2rem;
+
     text-align: center;
 }
 
@@ -1435,6 +1554,7 @@ header {
 .project-group-heading {
     display: flex;
     align-items: center;
+
     gap: 0.8rem;
 
     margin-bottom: 1.5rem;
@@ -1458,10 +1578,10 @@ header {
     align-items: center;
     justify-content: center;
 
+    flex-shrink: 0;
+
     width: 42px;
     height: 42px;
-
-    flex-shrink: 0;
 
     border-radius: 12px;
 
@@ -1477,7 +1597,9 @@ header {
 ======================================== */
 
 #featuredProjects {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
     gap: 1.5rem;
 }
 
@@ -1517,21 +1639,6 @@ header {
 
 
 /* ========================================
-   PROJECT CARD TOP
-======================================== */
-
-.project-card-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 0.75rem;
-
-    min-height: 36px;
-}
-
-
-/* ========================================
    EARLIER PROJECTS
 ======================================== */
 
@@ -1542,86 +1649,10 @@ header {
 }
 
 #earlierProjects {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
     gap: 1.4rem;
-}
-
-
-/* ========================================
-   PROJECT CARD POLISH
-======================================== */
-
-.project-card {
-    padding: 1.6rem;
-
-    gap: 1.15rem;
-}
-
-.project-card h3 {
-    margin: 0;
-
-    font-size: 1.35rem;
-}
-
-.project-description {
-    margin: 0;
-
-    line-height: 1.7;
-}
-
-.project-value {
-    margin-top: 0.15rem;
-}
-
-.highlights {
-    line-height: 1.6;
-}
-
-.project-links {
-    align-items: center;
-
-    padding-top: 0.5rem;
-}
-
-
-/* ========================================
-   PROJECT RESPONSIVE
-======================================== */
-
-@media (max-width: 1000px) {
-
-    #featuredProjects {
-        grid-template-columns: 1fr;
-    }
-
-    #earlierProjects {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 768px) {
-
-    #featuredProjects,
-    #earlierProjects {
-        grid-template-columns: 1fr;
-    }
-
-    .project-group {
-        margin-bottom: 3rem;
-    }
-
-    .project-card {
-        padding: 1.25rem;
-    }
-
-    .project-card-top {
-        flex-wrap: wrap;
-    }
-
-    .featured-badge {
-        margin-right: 0;
-    }
 }
 
 
@@ -1639,7 +1670,8 @@ header {
 
     background: #f4f4f4;
 
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.05);
 
     text-align: center;
 }
@@ -1754,7 +1786,8 @@ header {
     background: var(--color-white);
     color: #111827;
 
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+    box-shadow:
+        0 16px 40px rgba(0, 0, 0, 0.35);
 }
 
 .modal h3 {
@@ -1842,9 +1875,20 @@ footer p {
    RESPONSIVE - TABLET
 ======================================== */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
-    /* Hero */
+    #featuredProjects {
+        grid-template-columns: 1fr;
+    }
+
+    #earlierProjects {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+@media (max-width: 900px) {
 
     .hero {
         padding: 4rem 1.5rem;
@@ -1877,7 +1921,7 @@ footer p {
 
 
 /* ========================================
-   RESPONSIVE - MOBILE NAV
+   RESPONSIVE - MOBILE
 ======================================== */
 
 @media (max-width: 768px) {
@@ -1971,23 +2015,68 @@ footer p {
 
     /* About */
 
-    .about-content {
+    .about-intro {
+        margin: 2rem 1rem;
+        padding: 2rem 1.3rem;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-text h2,
+    .about-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-meta {
+        justify-content: center;
+    }
+
+
+    /* Experience */
+
+    .experience-card-header {
         flex-direction: column;
 
-        text-align: center;
+        gap: 1rem;
+    }
+
+    .experience-meta {
+        align-items: flex-start;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-card {
+        padding: 1.4rem;
+    }
+
+
+    /* Next step */
+
+    .next-step-card {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
 
     /* Skills */
 
-    .skills-floating {
-        gap: 0.7rem;
+    .skills-section {
+        margin: 2rem auto;
+        padding: 2.5rem 1rem;
     }
 
-    .skill {
-        padding: 0.5rem 1rem;
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
 
-        font-size: 0.85rem;
+    .skill-category {
+        padding: 1.25rem;
     }
 
 
@@ -1998,24 +2087,32 @@ footer p {
     }
 
 
-    /* LIA */
-
-    .lia-card-top {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .lia-card-top .lia-badge {
-        margin-left: 0;
-    }
-
-
     /* Projects */
 
+    #featuredProjects,
+    #earlierProjects,
     .projects-container {
         grid-template-columns: 1fr;
+    }
 
+    .projects-container {
         gap: 1.5rem;
+    }
+
+    .project-group {
+        margin-bottom: 3rem;
+    }
+
+    .project-card {
+        padding: 1.25rem;
+    }
+
+    .project-card-top {
+        flex-wrap: wrap;
+    }
+
+    .featured-badge {
+        margin-right: 0;
     }
 
 
@@ -2038,8 +2135,6 @@ footer p {
 
 @media (max-width: 600px) {
 
-    /* Hero */
-
     .hero {
         padding: 3rem 1.2rem;
 
@@ -2056,16 +2151,25 @@ footer p {
         align-items: center;
     }
 
+    /*
+       Viktigt:
+       vi gör inte hero-title stor igen här.
+       Annars skulle den gamla CSS-regeln
+       skriva över den nya mjukare designen.
+    */
+
     .hero-title {
-        font-size: 2.7rem;
+        font-size: 1.8rem;
     }
 
-    .hero-description {
-        font-size: 1.08rem;
+    .hero-title span {
+        font-size: 2.6rem;
     }
 
+    .hero-description,
     .hero-subtext {
-        font-size: 0.95rem;
+        font-size: 1rem;
+        line-height: 1.7;
     }
 
     .hero-actions {
@@ -2093,35 +2197,26 @@ footer p {
         width: 220px;
         height: 220px;
     }
+
+
+    /* Timeline */
+
+    .experience-timeline {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 0.5rem;
+    }
+
+    .timeline-track {
+        width: 100%;
+    }
 }
 
 
 /* ========================================
    RESPONSIVE - VERY SMALL
 ======================================== */
-
-@media (max-width: 500px) {
-
-    .lia-timeline {
-        flex-direction: column;
-
-        gap: 0.5rem;
-    }
-
-    .lia-bar {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .lia-section h3 {
-        font-size: 1.45rem;
-    }
-
-    .experience-item {
-        padding: 0.95rem 0.85rem;
-    }
-}
-
 
 @media (max-width: 480px) {
 
