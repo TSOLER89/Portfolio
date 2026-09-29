@@ -26,10 +26,70 @@ export function renderProjects() {
                     .map(item => `<li>${item}</li>`)
                     .join("");
 
+
+                    // Skapa länkar för projektet
+                const projectLinks = [];
+
+                if (project.links.github) {
+                    const githubLabel =
+                        project.links.backend || project.links.mobile
+                            ? "Web GitHub"
+                            : "GitHub";
+
+                    projectLinks.push(`
+                        <a
+                            href="${project.links.github}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn"
+                        >
+                            ${githubLabel}
+                        </a>
+                    `);
+                }
+
+                if (project.links.backend) {
+                    projectLinks.push(`
+                        <a
+                            href="${project.links.backend}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-secondary"
+                        >
+                            API GitHub
+                        </a>
+                    `);
+                }
+
+                if (project.links.mobile) {
+                    projectLinks.push(`
+                        <a
+                            href="${project.links.mobile}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-secondary"
+                        >
+                            Mobile GitHub
+                        </a>
+                    `);
+                }
+
+                if (project.links.live) {
+                    projectLinks.push(`
+                        <a
+                            href="${project.links.live}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-secondary"
+                        >
+                            Live-demo
+                        </a>
+                    `);
+                }
+
                 const links = `
                     <div class="project-links">
-                        <a href="${project.links.github}" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
-                        ${project.links.live ? `<a href="${project.links.live}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Live-demo</a>` : ""}
+                        ${projectLinks.join("")}
                     </div>
                 `;
 
