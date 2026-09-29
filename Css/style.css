@@ -1994,6 +1994,10 @@ footer p {
             rgba(255, 255, 255, 0.08);
     }
 
+    #ongoingProjects {
+    max-width: none;
+}
+
 
     /* About */
 
@@ -2096,6 +2100,77 @@ footer p {
     .featured-badge {
         margin-right: 0;
     }
+
+    /* ========================================
+   ONGOING PROJECT
+======================================== */
+
+#ongoingProjects {
+    grid-template-columns:
+        minmax(0, 1fr);
+
+    max-width: 760px;
+}
+
+.ongoing-projects {
+    padding-top: 0.5rem;
+}
+
+.ongoing-project-card {
+    border: 1px solid #e5d5df;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff 0%,
+            #fdf9fb 100%
+        );
+}
+
+.ongoing-icon {
+    background: #f5edf2;
+}
+
+
+/* Badges */
+
+.project-badges {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 0.5rem;
+}
+
+.project-status-badge {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 0.4rem 0.75rem;
+
+    border-radius: 999px;
+
+    background: #f3eaf0;
+    color: #8f667f;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.project-status-badge::before {
+    content: "";
+
+    width: 7px;
+    height: 7px;
+
+    margin-right: 0.45rem;
+
+    border-radius: 50%;
+
+    background: #9a6f89;
+}
 
 
     /* Floating logos */

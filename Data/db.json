@@ -58,6 +58,37 @@
         "github": "https://github.com/TSOLER89/TucBookingSystem"
     }
 },
+
+{
+  "title": "DevPilot",
+  "type": "Fullstack / AI",
+  "featured": false,
+  "status": "Pågående",
+  "description": "En AI-driven utvecklarassistent byggd med React, ASP.NET Core och OpenAI. Applikationen hjälper utvecklare att lära sig och repetera programmeringskoncept genom en interaktiv chatt.",
+  "tech": [
+    "React",
+    "Vite",
+    "JavaScript",
+    "C#",
+    ".NET 10",
+    "ASP.NET Core Web API",
+    "OpenAI API",
+    "REST API",
+    "Swagger"
+  ],
+  "highlights": [
+    "AI-baserad chatt med följdfrågor och konversationskontext",
+    "React-frontend mot ASP.NET Core Web API",
+    "Integration med OpenAI API",
+    "Service-lager med interfaces och dependency injection",
+    "Responsiv layout för desktop, tablet och mobil"
+  ],
+  "value": "Visar hur jag arbetar med fullstackutveckling, API-integration, AI-tjänster och strukturerad backend-arkitektur.",
+  "links": {
+    "github": "https://github.com/TSOLER89/devpilot"
+  }
+},
+
     {
         "title": "Rock Paper Scissor - Konsolspel",
         "type": "Backend",
