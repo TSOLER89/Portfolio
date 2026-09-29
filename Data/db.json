@@ -1,4 +1,35 @@
-[
+[   {
+    "title": "JobTrack - Job Application Tracker",
+    "type": "Fullstack / Web + Mobile",
+    "featured": true,
+    "description": "En fullstacklösning för att hantera jobbansökningar via både webb och mobil. React-webbappen och React Native-appen använder samma ASP.NET Core Web API och databas.",
+    "tech": [
+        "React",
+        "JavaScript",
+        "React Native",
+        "TypeScript",
+        "Expo",
+        "C#",
+        "ASP.NET Core Web API",
+        "Entity Framework Core",
+        "SQL Server",
+        "REST API"
+    ],
+    "highlights": [
+        "Skapa, redigera och ta bort jobbansökningar",
+        "Sökning, filtrering och statistik i webbapplikationen",
+        "Bildval och bilduppladdning från både webb och mobil",
+        "React Native-app med Expo Router och flera skärmar",
+        "Webb- och mobilapplikationen delar samma REST API och data"
+    ],
+    "value": "Visar att jag kan bygga en sammanhängande fullstacklösning där webb, mobil, API och databas arbetar tillsammans.",
+    "links": {
+        "github": "https://github.com/TSOLER89/job-application-tracker",
+        "backend": "https://github.com/TSOLER89/job-application-tracker-api",
+        "mobile": "https://github.com/TSOLER89/job-application-tracker-mobile"
+    }
+},
+
     {
         "title": "DagsBokApp - ToDo / Diary App",
         "type": "Backend",
