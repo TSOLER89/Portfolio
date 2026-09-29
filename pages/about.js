@@ -82,24 +82,95 @@ export function renderAbout() {
         </section>
 
         <section id="skills" class="skills-section">
-            <h3>Mina Kompetenser</h3>
-            <div class="skills-floating" id="skillsFloating">
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">JavaScript</span>
-                <span class="skill">C#</span>
-                <span class="skill">.NET</span>
-                <span class="skill">React</span>
-                <span class="skill">Node.js</span>
-                <span class="skill">SQL</span>
-                <span class="skill">Puppeteer</span>
-                <span class="skill">Git</span>
-                <span class="skill">GitHub</span>
-                <span class="skill">Agil Utveckling</span>
-                <span class="skill">REST API</span>
-                <span class="skill">Web Design</span>
+
+    <div class="section-header skills-header">
+        <p class="section-kicker">Teknik & arbetssätt</p>
+
+        <h3>Mina kompetenser</h3>
+
+        <p class="skills-intro">
+            Tekniker och arbetssätt som jag har använt i utbildning,
+            projekt och praktik.
+        </p>
+    </div>
+
+
+    <div class="skills-grid">
+
+        <article class="skill-category">
+            <h4>Backend & .NET</h4>
+
+            <div class="skill-tags">
+                <span>C#</span>
+                <span>.NET</span>
+                <span>ASP.NET Core</span>
+                <span>Web API</span>
+                <span>Entity Framework Core</span>
+                <span>Blazor</span>
             </div>
-        </section>
+        </article>
+
+
+        <article class="skill-category">
+            <h4>Frontend</h4>
+
+            <div class="skill-tags">
+                <span>JavaScript</span>
+                <span>TypeScript</span>
+                <span>React</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Vite</span>
+                <span>Responsiv design</span>
+            </div>
+        </article>
+
+
+        <article class="skill-category">
+            <h4>Mobile</h4>
+
+            <div class="skill-tags">
+                <span>React Native</span>
+                <span>Expo</span>
+                <span>Expo Router</span>
+                <span>Cross-platform</span>
+                <span>expo-image-picker</span>
+            </div>
+        </article>
+
+
+        <article class="skill-category">
+            <h4>API & Data</h4>
+
+            <div class="skill-tags">
+                <span>REST API</span>
+                <span>SQL Server</span>
+                <span>SQLite</span>
+                <span>JSON</span>
+                <span>Swagger</span>
+                <span>Postman</span>
+                <span>CORS</span>
+            </div>
+        </article>
+
+
+        <article class="skill-category">
+            <h4>Tools & Workflow</h4>
+
+            <div class="skill-tags">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>DevOps</span>
+                <span>CI/CD</span>
+                <span>Debugging</span>
+                <span>Testning</span>
+                <span>Agila arbetssätt</span>
+            </div>
+        </article>
+
+    </div>
+
+</section>
 
         <section class="about-hobbies">
             <div class="section-header">
