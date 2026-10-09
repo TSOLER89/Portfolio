@@ -741,30 +741,6 @@ header {
 }
 
 
-/* About tags */
-
-.about-meta {
-    display: flex;
-    flex-wrap: wrap;
-
-    gap: 0.6rem;
-
-    margin-top: 1.5rem;
-}
-
-.about-meta span {
-    padding: 0.45rem 0.8rem;
-
-    border: 1px solid #eadfe5;
-    border-radius: 999px;
-
-    background: #f3eaf0;
-    color: #7c6674;
-
-    font-size: 0.82rem;
-    font-weight: 600;
-}
-
 
 /* ========================================
    EXPERIENCE

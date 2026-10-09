@@ -46,12 +46,6 @@ export function renderAbout() {
                     lösningar steg för steg.
                 </p>
 
-                <div class="about-meta">
-                    <span>Systemutvecklare .NET</span>
-                    <span>Fullstack</span>
-                    <span>LIA 1: Consid AB</span>
-                </div>
-
             </div>
 
         </section>
