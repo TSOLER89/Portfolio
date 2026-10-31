@@ -9,7 +9,7 @@ export function renderProjects() {
             <div class="section-header projects-header">
                 <p class="section-kicker">Portfolio</p>
 
-                <h2>Mina projekt</h2>
+                <h1>Mina projekt</h1>
 
                 <p class="projects-intro">
                     Ett urval av projekt som visar hur jag arbetar med
@@ -35,7 +35,7 @@ export function renderProjects() {
 
                     <div>
                         <p class="section-kicker">
-                            Featured
+                            Utvalt
                         </p>
 
                         <h3>
@@ -125,6 +125,7 @@ export function renderProjects() {
     `;
 
 
+    const pageRoot = app.firstElementChild;
     fetch("Data/db.json")
 
         .then(response => {
@@ -177,6 +178,7 @@ export function renderProjects() {
                SORTERA PROJEKT
             ======================================== */
 
+            if (!pageRoot.isConnected) return;
             const featuredProjects =
                 projects.filter(
                     project =>
@@ -275,12 +277,8 @@ export function renderProjects() {
                 error
             );
 
-            const featuredContainer =
-                document.getElementById(
-                    "featuredProjects"
-                );
-
-            featuredContainer.innerHTML = `
+            if (!pageRoot.isConnected) return;
+            pageRoot.querySelector("#featuredProjects").innerHTML = `
                 <p class="projects-error">
                     Kunde inte läsa in projekten just nu.
                 </p>

@@ -4,18 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tsoler Hayitian | .NET Developer</title>
+    <title>Tsoler Hayitian | Systemutvecklare .NET</title>
+    <meta name="description" content="Tsoler Hayitian – blivande systemutvecklare .NET i Linköping. Projekt i C#, React, TypeScript och Umbraco samt fullstackerfarenhet från Consid.">
     
-    <link rel="icon" type="image/svg+xml" href="Assets/Photos/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="Assets/Projects/favicon.svg">
     <link rel="stylesheet" href="Css/style.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#app">Hoppa till innehållet</a>
 
     <header>
         <nav class="navbar">
 
-            <h1 class="logo">Min Portfolio</h1>
+            <a class="logo" href="#home" data-page="home">Tsoler<span> / .NET</span></a>
 
             <!-- Musikknapp -->
         <button
@@ -48,17 +50,17 @@
         <!-- Navigeringslänkar -->
 
             <ul class="nav-links" id="navLinks">
-                <li><a href="#" data-page="home">Hem</a></li>
-                <li><a href="#" data-page="about">Om mig</a></li>
-                <li><a href="#" data-page="projects">Projekt</a></li>
-                <li><a href="#" data-page="contact">Kontakt</a></li>
+                <li><a href="#home" data-page="home">Hem</a></li>
+                <li><a href="#about" data-page="about">Om mig</a></li>
+                <li><a href="#projects" data-page="projects">Projekt</a></li>
+                <li><a href="#contact" data-page="contact">Kontakt</a></li>
             </ul>
 
         </nav>
     </header>
 
     <!-- Dynamiskt innehåll laddas här -->
-    <main id="app"></main>
+    <main id="app" tabindex="-1"></main>
 
     <!-- Bakgrundsmusik -->
     <audio id="bgMusic" 
@@ -70,11 +72,11 @@
     <footer>
         <div class="footer-icons">
 
-            <a href="https://github.com/TSOLER89" target="_blank" aria-label="GitHub">
+            <a href="https://github.com/TSOLER89" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <img src="Assets/Photos/github.svg" alt="GitHub">
             </a>
 
-            <a href="https://www.linkedin.com/in/tsoler-hayitian-351ba7331/" target="_blank" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/tsoler-hayitian-351ba7331/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <img src="Assets/Photos/linkedin.jpg" alt="LinkedIn">
             </a>
 

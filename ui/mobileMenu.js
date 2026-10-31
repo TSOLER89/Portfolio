@@ -10,6 +10,7 @@ export function initMobileMenu() {
         const isOpen = navLinks.classList.toggle("open");
 
         menuToggle.classList.toggle("open", isOpen);
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
 
         menuToggle.setAttribute(
             "aria-label",
@@ -26,6 +27,13 @@ export function initMobileMenu() {
 
 
         closeMenu();
+    });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && navLinks.classList.contains("open")) {
+            closeMenu();
+            menuToggle.focus();
+        }
     });
 
 

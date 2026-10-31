@@ -9,18 +9,19 @@ export function renderContact() {
                     Kontakt
                 </p>
 
-                <h2>
+                <h1>
                     Hör gärna av dig
-                </h2>
+                </h1>
 
                 <p>
                     Vill du prata om LIA, examensarbete,
                     utveckling eller framtida möjligheter?
-                    Du hittar mig här.
+                    Jag söker LIA 2 och examensarbete inom systemutveckling.
                 </p>
             </div>
 
 
+            <p class="contact-cv"><a class="btn btn-secondary" href="Assets/PDF/Tsoler-Hayitian-utvecklare.pdf" target="_blank" rel="noopener noreferrer">Läs mitt CV (PDF) →</a></p>
             <div class="contact-grid">
 
                 <!-- E-post -->

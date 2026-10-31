@@ -1,186 +1,222 @@
-[   {
+[
+  {
+    "title": "NorGyank / MiniVinted",
+    "type": "Fullstack / Marknadsplats",
+    "featured": true,
+    "description": "En egen marknadsplats med annonser, inloggning, varukorg, beställningar och funktioner för säljare.",
+    "tech": [
+      "C#",
+      "Blazor",
+      "ASP.NET Core",
+      "SQL Server"
+    ],
+    "highlights": [
+      "Annonser och funktioner för säljare",
+      "Inloggning, varukorg och beställningar",
+      "Fullstackutveckling med Blazor, ASP.NET Core och SQL Server"
+    ],
+    "value": "Kopplar samman användargränssnitt, backend och databas i en marknadsplats.",
+    "contribution": "Egen marknadsplats, utvecklad som fullstackprojekt.",
+    "links": {}
+  },
+  {
+    "title": "Förening Pixel",
+    "type": "CMS / Grupprojekt",
+    "featured": true,
+    "description": "En webbplats byggd i Umbraco 18 som gruppprojekt, med innehållsmodeller, Razor-vyer och responsiv design.",
+    "tech": [
+      "Umbraco 18",
+      "Razor",
+      "Sass",
+      ".NET"
+    ],
+    "highlights": [
+      "Sidan Matcher & träningar",
+      "Innehållsmodellering i Umbraco",
+      "Razor-vyer och responsiv design med Sass"
+    ],
+    "value": "Visar CMS-utveckling där innehållsstruktur och gränssnitt samverkar.",
+    "contribution": "Ansvarade för sidan Matcher & träningar och arbetade med innehållsmodeller, vyer och responsiv design.",
+    "links": {}
+  },
+  {
     "title": "JobTrack - Job Application Tracker",
     "type": "Fullstack / Web + Mobile",
     "featured": true,
     "image": "Assets/Projects/jobtrack.png",
     "description": "En fullstacklösning för att hantera jobbansökningar via både webb och mobil. React-webbappen och React Native-appen använder samma ASP.NET Core Web API och databas.",
     "tech": [
-        "React",
-        "JavaScript",
-        "React Native",
-        "TypeScript",
-        "Expo",
-        "C#",
-        "ASP.NET Core Web API",
-        "Entity Framework Core",
-        "SQL Server",
-        "REST API"
+      "React",
+      "JavaScript",
+      "React Native",
+      "TypeScript",
+      "Expo",
+      "C#",
+      "ASP.NET Core Web API",
+      "Entity Framework Core",
+      "SQL Server",
+      "REST API"
     ],
     "highlights": [
-        "CRUD för jobbansökningar med sökning, filtrering och statistik",
-        "React-webbapp och React Native-app mot samma REST API",
-        "Bilduppladdning från både webb och mobil",
-        "ASP.NET Core, Entity Framework Core och SQL Server"
+      "CRUD för jobbansökningar med sökning, filtrering och statistik",
+      "React-webbapp och React Native-app mot samma REST API",
+      "Bilduppladdning från både webb och mobil",
+      "ASP.NET Core, Entity Framework Core och SQL Server"
     ],
     "value": "Jag kan bygga en sammanhängande fullstacklösning där webb, mobil, API och databas arbetar tillsammans.",
     "links": {
-        "github": "https://github.com/TSOLER89/job-application-tracker",
-        "backend": "https://github.com/TSOLER89/job-application-tracker-api",
-        "mobile": "https://github.com/TSOLER89/job-application-tracker-mobile"
+      "github": "https://github.com/TSOLER89/job-application-tracker",
+      "backend": "https://github.com/TSOLER89/job-application-tracker-api",
+      "mobile": "https://github.com/TSOLER89/job-application-tracker-mobile"
     }
-},
-
-   {
+  },
+  {
     "title": "TUC Booking System",
     "type": "Fullstack / Grupprojekt",
     "featured": true,
     "image": "Assets/Projects/tuc-booking.png",
     "description": "Ett fullstack-bokningssystem för grupprum och resurser utvecklat som gruppprojekt på TUC. Systemet innehåller autentisering, rumsbokning, konflikthantering, adminfunktioner och e-postflöden.",
     "tech": [
-        "C#",
-        ".NET 10",
-        "ASP.NET Core Web API",
-        "Blazor Server",
-        "Entity Framework Core",
-        "SQLite",
-        "JWT",
-        "Bootstrap",
-        "Swagger",
-        "xUnit"
+      "C#",
+      ".NET 10",
+      "ASP.NET Core Web API",
+      "Blazor Server",
+      "Entity Framework Core",
+      "SQLite",
+      "JWT",
+      "Bootstrap",
+      "Swagger",
+      "xUnit"
     ],
     "highlights": [
-        "REST API för användare, rum och bokningar",
-        "JWT-autentisering och rollbaserad behörighet",
-        "Validering av tider, helger och dubbelbokningar",
-        "Entity Framework Core, migrations och automatiserade tester"
+      "REST API för användare, rum och bokningar",
+      "JWT-autentisering och rollbaserad behörighet",
+      "Validering av tider, helger och dubbelbokningar",
+      "Entity Framework Core, migrations och automatiserade tester"
     ],
     "value": "Visar erfarenhet av att arbeta i ett större teamprojekt med .NET, affärslogik, API-design, autentisering, databas och testning.",
     "contribution": "Gruppprojekt där jag arbetade som Project Lead och Backend Developer.",
     "links": {
-        "github": "https://github.com/TSOLER89/TucBookingSystem"
+      "github": "https://github.com/TSOLER89/TucBookingSystem"
     }
-},
-
-{
-  "title": "DevPilot",
-  "type": "Fullstack / AI",
-  "featured": false,
-  "status": "Pågående",
-  "image": "Assets/Projects/devpilot.png",
-  "description": "En AI-driven utvecklarassistent byggd med React, ASP.NET Core och OpenAI. Applikationen hjälper utvecklare att lära sig och repetera programmeringskoncept genom en interaktiv chatt.",
-  "tech": [
-    "React",
-    "Vite",
-    "JavaScript",
-    "C#",
-    ".NET 10",
-    "ASP.NET Core Web API",
-    "OpenAI API",
-    "REST API",
-    "Swagger"
-  ],
-  "highlights": [
-    "AI-baserad chatt med följdfrågor och konversationskontext",
-    "React-frontend mot ASP.NET Core Web API",
-    "Integration med OpenAI API",
-    "Service-lager med interfaces och dependency injection",
-    "Responsiv layout för desktop, tablet och mobil"
-  ],
-  "value": "Visar hur jag arbetar med fullstackutveckling, API-integration, AI-tjänster och strukturerad backend-arkitektur.",
-  "links": {
-    "github": "https://github.com/TSOLER89/devpilot"
-  }
-},
-
-    {
-        "title": "Rock Paper Scissor - Konsolspel",
-        "type": "Backend",
-        "image": "Assets/Projects/rock-paper-scissor.png",
-        "description": "Konsolbaserat sten-sax-påse-spel som visar logik, kontrollflöden och interaktiv programmering.",
-        "tech": [
-            "C#",
-            ".NET Console",
-            "If / switch",
-            "Random"
-        ],
-        "highlights": [
-            "Spela mot datorn",
-            "Poängräkning",
-            "Användarvänligt flöde",
-            "Tydlig kodstruktur"
-        ],
-        "value": "Visar att jag behärskar grundläggande programmeringslogik och kan bygga interaktiva flöden med tydlig struktur.",
-        "links": {
-            "github": "https://github.com/TSOLER89/RockPaperScissor"
-        }
-    },
-    {
-        "title": "Caffe-Retro-2021 - Mini Web API",
-        "type": "API",
-        "image": "Assets/Projects/caffe-retro.png",
-        "description": "Mini Web API i C# för hantering av cafédata med CRUD-funktionalitet.",
-        "tech": [
-            "C#",
-            "ASP.NET Core Web API",
-            "JSON",
-            "CRUD"
-        ],
-        "highlights": [
-            "Create, Read, Update, Delete",
-            "JSON-baserad datalagring",
-            "Testning via Postman",
-            "Strukturerad backend-kod"
-        ],
-        "value": "Visar att jag kan bygga API:er, arbeta med dataflöden och testa backendfunktionalitet på ett strukturerat sätt.",
-        "links": {
-            "github": "https://github.com/TSOLER89/Caffe-Retro-2021"
-        }
-    },
-    {
-        "title": "Gala Start - Grupprojekt",
-        "type": "Frontend / Team",
-        "image": "Assets/Projects/gala-start.png",
-        "description": "Grupprojekt där vi utvecklade en webbapplikation för att hantera evenemang och biljetter med fokus på samarbete och versionshantering.",
-        "tech": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Node.js",
-            "Git",
-            "GitHub"
-        ],
-        "highlights": [
-            "Byggde interaktiv användarupplevelse med JavaScript",
-            "Implementerade backendfunktioner med Node.js",
-            "Arbetade i team med Git och GitHub"
-        ],
-        "value": "Visar att jag kan samarbeta i team, arbeta i versionshantering och bidra i både frontend och backend.",
-        "links": {
-            "github": "https://github.com/sbrindmark/gala-start-main.git"
-        }
-    },
-
-    {
+  },
+  {
+    "title": "DevPilot",
+    "type": "Fullstack / AI",
+    "featured": false,
+    "status": "Pågående",
+    "image": "Assets/Projects/devpilot.png",
+    "description": "En AI-driven utvecklarassistent byggd med React, ASP.NET Core och OpenAI. Applikationen hjälper utvecklare att lära sig och repetera programmeringskoncept genom en interaktiv chatt.",
+    "tech": [
+      "React",
+      "Vite",
+      "JavaScript",
+      "C#",
+      ".NET 10",
+      "ASP.NET Core Web API",
+      "OpenAI API",
+      "REST API",
+      "Swagger"
+    ],
+    "highlights": [
+      "AI-baserad chatt med följdfrågor och konversationskontext",
+      "React-frontend mot ASP.NET Core Web API",
+      "Integration med OpenAI API",
+      "Service-lager med interfaces och dependency injection",
+      "Responsiv layout för desktop, tablet och mobil"
+    ],
+    "value": "Visar hur jag arbetar med fullstackutveckling, API-integration, AI-tjänster och strukturerad backend-arkitektur.",
+    "links": {
+      "github": "https://github.com/TSOLER89/devpilot"
+    }
+  },
+  {
+    "title": "Rock Paper Scissor - Konsolspel",
+    "type": "Backend",
+    "image": "Assets/Projects/rock-paper-scissor.png",
+    "description": "Konsolbaserat sten-sax-påse-spel som visar logik, kontrollflöden och interaktiv programmering.",
+    "tech": [
+      "C#",
+      ".NET Console",
+      "If / switch",
+      "Random"
+    ],
+    "highlights": [
+      "Spela mot datorn",
+      "Poängräkning",
+      "Användarvänligt flöde",
+      "Tydlig kodstruktur"
+    ],
+    "value": "Visar att jag behärskar grundläggande programmeringslogik och kan bygga interaktiva flöden med tydlig struktur.",
+    "links": {
+      "github": "https://github.com/TSOLER89/RockPaperScissor"
+    }
+  },
+  {
+    "title": "Caffe-Retro-2021 - Mini Web API",
+    "type": "API",
+    "image": "Assets/Projects/caffe-retro.png",
+    "description": "Mini Web API i C# för hantering av cafédata med CRUD-funktionalitet.",
+    "tech": [
+      "C#",
+      "ASP.NET Core Web API",
+      "JSON",
+      "CRUD"
+    ],
+    "highlights": [
+      "Create, Read, Update, Delete",
+      "JSON-baserad datalagring",
+      "Testning via Postman",
+      "Strukturerad backend-kod"
+    ],
+    "value": "Visar att jag kan bygga API:er, arbeta med dataflöden och testa backendfunktionalitet på ett strukturerat sätt.",
+    "links": {
+      "github": "https://github.com/TSOLER89/Caffe-Retro-2021"
+    }
+  },
+  {
+    "title": "Gala Start - Grupprojekt",
+    "type": "Frontend / Team",
+    "image": "Assets/Projects/gala-start.png",
+    "description": "Grupprojekt där vi utvecklade en webbapplikation för att hantera evenemang och biljetter med fokus på samarbete och versionshantering.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Node.js",
+      "Git",
+      "GitHub"
+    ],
+    "highlights": [
+      "Byggde interaktiv användarupplevelse med JavaScript",
+      "Implementerade backendfunktioner med Node.js",
+      "Arbetade i team med Git och GitHub"
+    ],
+    "value": "Visar att jag kan samarbeta i team, arbeta i versionshantering och bidra i både frontend och backend.",
+    "links": {
+      "github": "https://github.com/sbrindmark/gala-start-main.git"
+    }
+  },
+  {
     "title": "DagsBokApp - ToDo / Diary App",
     "type": "Backend",
     "image": "Assets/Projects/dagsbokapp.png",
     "description": "Konsolbaserad C#-applikation för att skapa och hantera dagboksanteckningar och uppgifter.",
     "tech": [
-        "C#",
-        ".NET Console",
-        "OOP",
-        "Filhantering"
+      "C#",
+      ".NET Console",
+      "OOP",
+      "Filhantering"
     ],
     "highlights": [
-        "Skapa, visa och ta bort anteckningar",
-        "Markera uppgifter som färdiga",
-        "Spara data mellan sessioner",
-        "Tydlig konsolmeny"
+      "Skapa, visa och ta bort anteckningar",
+      "Markera uppgifter som färdiga",
+      "Spara data mellan sessioner",
+      "Tydlig konsolmeny"
     ],
     "value": "Visar att jag kan strukturera logik, arbeta objektorienterat och bygga stabil funktionalitet från grunden.",
     "links": {
-        "github": "https://github.com/TSOLER89/DagsBokApp"
+      "github": "https://github.com/TSOLER89/DagsBokApp"
     }
-}
-    
+  }
 ]
