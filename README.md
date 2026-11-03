@@ -30,26 +30,6 @@ Jag arbetar med både frontend och backend och har erfarenhet av bland annat:
 
 ## Utvalda projekt
 
-### JobTrack – Job Application Tracker
-
-En fullstacklösning för att hantera jobbansökningar via webb och mobil.
-
-Teknik:
-
-- React
-- React Native
-- Expo
-- TypeScript
-- C#
-- ASP.NET Core Web API
-- Entity Framework Core
-- SQL Server
-- REST API
-
-Projektet består av webbapp, backend/API och mobilapp.
-
----
-
 ### TUC Booking System
 
 Ett fullstack-bokningssystem för grupprum och resurser utvecklat som gruppprojekt på TUC.
@@ -81,6 +61,41 @@ Jag arbetade som **Project Lead och Backend Developer** i projektet.
 ---
 
 ## Pågående projekt
+
+### JobTrack – Job Application Tracker
+
+En fullstacklösning för att hantera jobbansökningar via webb och mobil.
+
+Teknik:
+
+- React
+- React Native
+- Expo
+- TypeScript
+- C#
+- ASP.NET Core Web API
+- Entity Framework Core
+- SQL Server
+- REST API
+
+Projektet består av webbapp, backend/API och mobilapp. Webb och mobil delar användarkonton, ansökningar och bilder via samma API.
+
+Funktioner:
+
+- Registrering, inloggning och användarspecifika data.
+- Ansökningshantering med sökning, statusfilter, bilder, statistik och uppföljningsdatum.
+- Gmail-koppling via OAuth 2.0 med krypterade Google-token på servern.
+- Regelbaserade importförslag som granskas och godkänns eller avvisas av användaren.
+- Dubblettskydd, importhistorik och möjliga kontakter om jobb eller examensarbete som kan sparas som Intresserad.
+- Automatiserade tester för API, kontoisolering, datum och mejlimport.
+
+Projektet är under utveckling och visas som lokal demo. Sökningen omfattar högst 50 matchande mejl från de senaste 90 dagarna. Automatiskt sparande, Outlook och offentlig live-demo återstår.
+
+Projektkortet visar [webbens välkomstsida](Assets/Projects/jobtrack-web-start.png) och [översikten efter inloggning](Assets/Projects/jobtrack-oversikt.png). Skärmbilderna visas sida vid sida i ett kompakt galleri utan klicklänkar. Projektkortet följer samma kolumnbredd och bildproportioner som övriga projekt.
+
+Kod: [Webb](https://github.com/TSOLER89/job-application-tracker), [API](https://github.com/TSOLER89/job-application-tracker-api), [Mobil](https://github.com/TSOLER89/job-application-tracker-mobile).
+
+---
 
 ### DevPilot
 
@@ -145,7 +160,7 @@ Portfoljo/
 ├── Assets/
 │   ├── Photos/
 │   ├── Projects/
-│   └── Musics/
+│   └── PDF/
 │
 ├── Css/
 │   └── style.css
@@ -160,8 +175,18 @@ Portfoljo/
 │   └── contact.js
 │
 ├── ui/
+│   └── mobileMenu.js
 │
 ├── index.html
 ├── main.js
 └── router.js
 ```
+
+
+## CSS och underhåll
+
+`Css/style.css` samlar designvariabler, komponentstilar, responsiva regler och tillgänglighet. Delade färger definieras i `:root`. Mobilregler och stöd för reducerad rörelse finns kvar i sin kaskadordning.
+
+Musikfunktionen och de oanvända flytande logotyperna är borttagna. Inga externa JavaScript-bibliotek behövs för portfolions navigation eller gränssnitt.
+
+Vid ändring av CSS uppdateras versionsparametern i stilmallens länk i `index.html`, så att en äldre cachad stilmall inte används. Kontrollera Hem, Om mig, Projekt och Kontakt på både dator och mobil, inklusive mobilmenyn, tangentbordsfokus och länken ”Hoppa till innehållet”.
