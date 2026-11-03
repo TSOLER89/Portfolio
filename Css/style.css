@@ -1457,10 +1457,33 @@ h3 {
     justify-content: space-between;
     gap: 2rem;
     margin-bottom: 2rem;
+    padding: 2rem;
+    border: 1px solid #e2d3dc;
+    border-left: 4px solid var(--color-primary);
+    border-radius: 14px;
+    background: linear-gradient(120deg, var(--color-primary-light), #fffaf7);
 }
 
 .home-contact p {
     color: var(--color-text-soft);
+}
+
+.home-contact > div {
+    min-width: 0;
+    max-width: 740px;
+}
+
+.home-contact .section-kicker {
+    color: var(--color-primary-dark);
+}
+
+.home-contact h2 {
+    margin-bottom: 0.6rem;
+    line-height: 1.25;
+}
+
+.home-contact > .btn {
+    flex-shrink: 0;
 }
 
 .about-intro,
@@ -1757,6 +1780,8 @@ footer {
     .home-contact {
         flex-direction: column;
         align-items: flex-start;
+        gap: 1.25rem;
+        padding: 1.5rem;
     }
 
     .about-intro,
@@ -1841,21 +1866,76 @@ footer {
 
 /* LIA availability and visible contact details. */
 .lia-summary {
-    margin-top: 1.2rem;
-    padding: 0.9rem 1.1rem;
+    margin: 1.2rem 0 1.5rem;
+    padding: 1.1rem 1.25rem;
+    border: 1px solid #e2d3dc;
     border-left: 3px solid var(--color-primary);
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.65);
+    border-radius: 12px;
+    background: linear-gradient(120deg, #e8d9e3, #dcc5d5);
 }
 .lia-summary p { margin: 0; }
-.lia-summary-title { color: var(--color-primary-dark); font-size: 0.8rem; font-weight: 600; }
-.lia-summary-dates { color: #302b33; font-size: 1rem; font-weight: 600; }
-.lia-summary-location { color: var(--color-text-soft); font-size: 0.9rem; }
-.contact-availability { max-width: 900px; margin: 0 auto 2rem; padding: 1.5rem; border: 1px solid #e7dfe4; border-radius: 8px; background: var(--color-white); }
-.contact-availability h2 { margin-bottom: 1rem; color: #302b33; font-size: 1.1rem; }
-.contact-availability dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 2rem; }
-.contact-availability dt { margin-bottom: 0.3rem; color: var(--color-text-soft); font-size: 0.8rem; }
-.contact-availability dd { margin: 0; color: #302b33; font-weight: 600; }
+.lia-summary-title {
+    color: var(--color-primary-dark);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.lia-summary .lia-summary-dates {
+    margin: 0.25rem 0;
+    color: #302b33;
+    font-size: clamp(1rem, 1.5vw, 1.1rem);
+    font-weight: 600;
+}
+
+.lia-summary-location {
+    color: var(--color-text-soft);
+    font-size: 0.9rem;
+}
+
+.contact-availability {
+    max-width: 900px;
+    margin: 0 auto 1.5rem;
+    padding: 1.75rem;
+    border: 1px solid #e2d3dc;
+    border-left: 4px solid var(--color-primary);
+    border-radius: 14px;
+    background: linear-gradient(120deg, var(--color-white), #faf4f7);
+    box-shadow: 0 8px 24px rgba(96, 61, 82, 0.05);
+}
+
+.contact-availability h2 {
+    margin-bottom: 1.25rem;
+    color: var(--color-primary-dark);
+    font-size: 1.1rem;
+}
+
+.contact-availability dl {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem 2rem;
+}
+
+.contact-availability dl > div {
+    min-width: 0;
+}
+
+.contact-availability dl > div + div {
+    padding-left: 1.5rem;
+    border-left: 1px solid #e2d3dc;
+}
+
+.contact-availability dt {
+    margin-bottom: 0.35rem;
+    color: var(--color-text-soft);
+    font-size: 0.8rem;
+}
+
+.contact-availability dd {
+    margin: 0;
+    color: #302b33;
+    font-weight: 600;
+    overflow-wrap: break-word;
+}
 .contact-email-card { grid-column: 1 / -1; min-width: 0; }
 .contact-email-content { min-width: 0; flex: 1; }
 .contact-email-address { display: block; margin-bottom: 1rem; color: var(--color-primary-dark); font-weight: 600; overflow-wrap: anywhere; user-select: text; }
@@ -1866,5 +1946,11 @@ footer {
 .contact-email-actions button:disabled { cursor: wait; opacity: 0.7; }
 .contact-email-card .contact-copy-status { min-height: 1.6em; margin: 0.6rem 0 0; font-size: 0.8rem; color: var(--color-primary-dark); }
 @media (max-width: 600px) {
+    .contact-availability { padding: 1.25rem; }
     .contact-availability dl { grid-template-columns: minmax(0, 1fr); }
+    .contact-availability dl > div + div {
+        padding: 1rem 0 0;
+        border-left: 0;
+        border-top: 1px solid #e2d3dc;
+    }
 }
