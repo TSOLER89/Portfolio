@@ -14,10 +14,10 @@
             </h1>
 
             <p class="about-lead">
-            Jag är Tsoler Hayitian och studerar till systemutvecklare .NET på TUC Yrkeshögskola i Linköping, Augusti 2025–Juni 2027.
+            Jag är Tsoler Hayitian och studerar till systemutvecklare .NET i Linköping, Augusti 2025–Juni 2027.
             </p>
             <p>
-            Jag gillar att lösa problem, utveckla användbara funktioner och förstå hela flödet från användargränssnitt till API och databas. Under min LIA på Consid fick jag omsätta det i ett kundprojekt för byggbranschen.
+                Jag tycker om att förstå hela flödet, från verksamhetens behov och användargränssnitt till API, affärslogik och databas. Under min LIA på Consid fick jag omsätta det i praktiken genom att utveckla funktioner i ett kundprojekt för byggbranschen.
             </p>
 
             <div class="hero-actions">
