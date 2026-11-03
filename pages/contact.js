@@ -1,4 +1,4 @@
-import { jobSearch, startLabel, endLabel } from "../Data/job-search.js";
+import { jobSearch, startLabel, endLabel } from "./job-search.js";
 
 export function renderContact() {
     const app = document.getElementById("app");

@@ -1,4 +1,4 @@
-import { jobSearch, startLabel, endLabel, periodLabel } from "../Data/job-search.js";
+﻿import { jobSearch, startLabel, endLabel, periodLabel } from "./job-search.js";
 
 export function renderHome() {
     document.getElementById("app").innerHTML = `

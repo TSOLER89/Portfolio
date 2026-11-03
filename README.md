@@ -194,4 +194,4 @@ Vid ändring av CSS uppdateras versionsparametern i stilmallens länk i `index.h
 
 ## LIA och kontaktuppgifter
 
-Jag söker LIA 2 och examensarbete **14 december 2026–28 maj 2027**, främst på plats i **Linköping eller Norrköping**. Period, ortsönskemål och mejladress finns i `Data/job-search.js` och återanvänds på startsidan och kontaktsidan. Kontaktsidan visar mejladressen och har separata funktioner för att öppna ett mejl eller kopiera adressen. Om webbläsaren blockerar kopiering visas instruktioner för manuell kopiering.
+Jag söker LIA 2 och examensarbete **14 december 2026–28 maj 2027**, främst på plats i **Linköping eller Norrköping**. Period, ortsönskemål och mejladress finns i `pages/job-search.js` och återanvänds på startsidan och kontaktsidan. Kontaktsidan visar mejladressen och har separata funktioner för att öppna ett mejl eller kopiera adressen. Om webbläsaren blockerar kopiering visas instruktioner för manuell kopiering.
