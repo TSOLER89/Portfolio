@@ -817,7 +817,7 @@ header {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0px, 1fr));
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
     gap: 1.2rem;
 }
 
@@ -1836,4 +1836,35 @@ footer {
     font-size: 0.85rem;
     line-height: 1.6;
     color: var(--color-text-soft);
+}
+
+
+/* LIA availability and visible contact details. */
+.lia-summary {
+    margin-top: 1.2rem;
+    padding: 0.9rem 1.1rem;
+    border-left: 3px solid var(--color-primary);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.65);
+}
+.lia-summary p { margin: 0; }
+.lia-summary-title { color: var(--color-primary-dark); font-size: 0.8rem; font-weight: 600; }
+.lia-summary-dates { color: #302b33; font-size: 1rem; font-weight: 600; }
+.lia-summary-location { color: var(--color-text-soft); font-size: 0.9rem; }
+.contact-availability { max-width: 900px; margin: 0 auto 2rem; padding: 1.5rem; border: 1px solid #e7dfe4; border-radius: 8px; background: var(--color-white); }
+.contact-availability h2 { margin-bottom: 1rem; color: #302b33; font-size: 1.1rem; }
+.contact-availability dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 2rem; }
+.contact-availability dt { margin-bottom: 0.3rem; color: var(--color-text-soft); font-size: 0.8rem; }
+.contact-availability dd { margin: 0; color: #302b33; font-weight: 600; }
+.contact-email-card { grid-column: 1 / -1; min-width: 0; }
+.contact-email-content { min-width: 0; flex: 1; }
+.contact-email-address { display: block; margin-bottom: 1rem; color: var(--color-primary-dark); font-weight: 600; overflow-wrap: anywhere; user-select: text; }
+.contact-email-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.contact-email-actions .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; text-align: center; }
+.contact-email-actions .btn:hover,
+.contact-email-actions .btn:focus-visible { background: var(--color-primary-dark); color: var(--color-white); }
+.contact-email-actions button:disabled { cursor: wait; opacity: 0.7; }
+.contact-email-card .contact-copy-status { min-height: 1.6em; margin: 0.6rem 0 0; font-size: 0.8rem; color: var(--color-primary-dark); }
+@media (max-width: 600px) {
+    .contact-availability dl { grid-template-columns: minmax(0, 1fr); }
 }

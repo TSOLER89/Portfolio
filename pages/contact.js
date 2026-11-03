@@ -1,3 +1,5 @@
+import { jobSearch, startLabel, endLabel } from "../Data/job-search.js";
+
 export function renderContact() {
     const app = document.getElementById("app");
 
@@ -14,38 +16,38 @@ export function renderContact() {
                 </h1>
 
                 <p>
-                    Vill du prata om LIA, examensarbete,
-                    utveckling eller framtida möjligheter?
-                    Jag söker LIA 2 och examensarbete inom systemutveckling.
+                    Jag söker en plats för LIA 2 och examensarbete inom .NET och fullstackutveckling.
+                    Hör gärna av dig om ni har en möjlighet eller vill veta mer om mina projekt.
                 </p>
             </div>
 
+
+            <section class="contact-availability" aria-labelledby="lia-availability-heading">
+                <h2 id="lia-availability-heading">LIA 2 och examensarbete</h2>
+                <dl>
+                    <div><dt>Period</dt><dd><time datetime="${jobSearch.startDate}">${startLabel}</time>–<time datetime="${jobSearch.endDate}">${endLabel}</time></dd></div>
+                    <div><dt>Ort och arbetsform</dt><dd>${jobSearch.locationPreference}.</dd></div>
+                </dl>
+            </section>
 
             <p class="contact-cv"><a class="btn btn-secondary" href="Assets/PDF/Tsoler-Hayitian-utvecklare.pdf" target="_blank" rel="noopener noreferrer">Läs mitt CV (PDF) →</a></p>
             <div class="contact-grid">
 
                 <!-- E-post -->
 
-                <a
-                    href="mailto:tsoler.hayitian.syne25lin@edu.tucsweden.se"
-                    class="contact-card"
-                >
-                    <div class="contact-icon">
-                        ✉
-                    </div>
-
-                    <div>
+                <article class="contact-card contact-email-card">
+                    <div class="contact-icon" aria-hidden="true">✉</div>
+                    <div class="contact-email-content">
                         <h2>E-post</h2>
-
-                        <p>
-                            Skicka ett meddelande direkt till mig.
-                        </p>
-
-                        <span>
-                            Skriv e-post →
-                        </span>
+                        <p>Kontakta mig om LIA, examensarbete eller andra utvecklingsmöjligheter.</p>
+                        <a class="contact-email-address" href="mailto:${jobSearch.email}">${jobSearch.email}</a>
+                        <div class="contact-email-actions">
+                            <a class="btn btn-secondary" href="mailto:${jobSearch.email}">Skriv e-post</a>
+                            <button type="button" class="btn btn-secondary" data-copy-email>Kopiera mejladress</button>
+                        </div>
+                        <p class="contact-copy-status" data-copy-status role="status" aria-live="polite" aria-atomic="true"></p>
                     </div>
-                </a>
+                </article>
 
 
                 <!-- LinkedIn -->
@@ -103,4 +105,23 @@ export function renderContact() {
 
         </section>
     `;
+
+    const pageRoot = app.firstElementChild;
+    const copyButton = pageRoot.querySelector("[data-copy-email]");
+    const copyStatus = pageRoot.querySelector("[data-copy-status]");
+    copyButton.addEventListener("click", async () => {
+        copyButton.disabled = true;
+        copyButton.setAttribute("aria-busy", "true");
+        copyStatus.textContent = "";
+        try {
+            if (!navigator.clipboard?.writeText) throw new Error("Clipboard unavailable");
+            await navigator.clipboard.writeText(jobSearch.email);
+            if (pageRoot.isConnected) copyStatus.textContent = "Mejladressen är kopierad.";
+        } catch {
+            if (pageRoot.isConnected) copyStatus.textContent = "Kunde inte kopiera automatiskt. Markera mejladressen och kopiera den manuellt.";
+        } finally {
+            copyButton.disabled = false;
+            copyButton.removeAttribute("aria-busy");
+        }
+    });
 }

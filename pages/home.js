@@ -1,3 +1,5 @@
+import { jobSearch, startLabel, endLabel, periodLabel } from "../Data/job-search.js";
+
 ﻿export function renderHome() {
     document.getElementById("app").innerHTML = `
         <section class="hero"><div class="hero-container">
@@ -11,7 +13,12 @@
                 Jag utvecklar webbapplikationer med C#, .NET, React och TypeScript med fokus på samspelet mellan gränssnitt, API och databas.
                 </p>
                 <p class="hero-subtext">
-                Studerar systemutveckling på TUC och har praktisk fullstackerfarenhet från Consid. Nu söker jag LIA 2 och examensarbete, med målet att fortsätta som junior systemutvecklare.</p>
+                Studerar systemutveckling på TUC och har praktisk fullstackerfarenhet från Consid, med målet att fortsätta som junior systemutvecklare.</p>
+                <aside class="lia-summary" aria-label="Söker LIA 2 och examensarbete">
+                    <p class="lia-summary-title">Söker LIA 2 och examensarbete</p>
+                    <p class="lia-summary-dates"><time datetime="${jobSearch.startDate}">${startLabel}</time>–<time datetime="${jobSearch.endDate}">${endLabel}</time></p>
+                    <p class="lia-summary-location">${jobSearch.locationPreference}.</p>
+                </aside>
                 <div class="hero-actions"><a href="#projects" class="btn btn-primary" data-page="projects">Utforska mina projekt →
                 </a>
                 <a href="Assets/PDF/Tsoler-Hayitian-utvecklare.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
@@ -47,7 +54,7 @@
         Nästa steg
         </p>
         <h2>En plats att bidra och utvecklas.</h2>
-        <p>Jag söker LIA 2 och examensarbete inom systemutveckling.</p>
+        <p>Jag söker LIA 2 och examensarbete ${periodLabel}. ${jobSearch.locationPreference}.</p>
         </div>
         <a href="#contact" data-page="contact" class="btn btn-primary">
         Ta kontakt →

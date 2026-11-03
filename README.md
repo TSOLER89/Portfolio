@@ -190,3 +190,8 @@ Portfoljo/
 Musikfunktionen och de oanvända flytande logotyperna är borttagna. Inga externa JavaScript-bibliotek behövs för portfolions navigation eller gränssnitt.
 
 Vid ändring av CSS uppdateras versionsparametern i stilmallens länk i `index.html`, så att en äldre cachad stilmall inte används. Kontrollera Hem, Om mig, Projekt och Kontakt på både dator och mobil, inklusive mobilmenyn, tangentbordsfokus och länken ”Hoppa till innehållet”.
+
+
+## LIA och kontaktuppgifter
+
+Jag söker LIA 2 och examensarbete **14 december 2026–28 maj 2027**, främst på plats i **Linköping eller Norrköping**. Period, ortsönskemål och mejladress finns i `Data/job-search.js` och återanvänds på startsidan och kontaktsidan. Kontaktsidan visar mejladressen och har separata funktioner för att öppna ett mejl eller kopiera adressen. Om webbläsaren blockerar kopiering visas instruktioner för manuell kopiering.
