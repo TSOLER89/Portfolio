@@ -1540,7 +1540,8 @@ header {
     margin-bottom: 0.15rem;
 }
 
-.project-group-heading h3 {
+.project-group-heading h2 {
+    text-align: left;
     margin: 0;
 
     color: #352f34;
@@ -1911,7 +1912,7 @@ header {
 
 /* Text */
 
-.contact-card h3 {
+.contact-card h2 {
     margin-bottom: 0.35rem;
 
     color: #4a4248;

@@ -38,9 +38,9 @@ export function renderProjects() {
                             Utvalt
                         </p>
 
-                        <h3>
+                        <h2>
                             Utvalda projekt
-                        </h3>
+                        </h2>
                     </div>
 
                 </div>
@@ -74,9 +74,9 @@ export function renderProjects() {
                             Under utveckling
                         </p>
 
-                        <h3>
+                        <h2>
                             Pågående projekt
-                        </h3>
+                        </h2>
                     </div>
 
                 </div>
@@ -106,9 +106,9 @@ export function renderProjects() {
                             Arkiv
                         </p>
 
-                        <h3>
+                        <h2>
                             Tidigare projekt
-                        </h3>
+                        </h2>
                     </div>
 
                 </div>

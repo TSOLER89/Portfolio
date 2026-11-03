@@ -35,7 +35,7 @@ export function renderContact() {
                     </div>
 
                     <div>
-                        <h3>E-post</h3>
+                        <h2>E-post</h2>
 
                         <p>
                             Skicka ett meddelande direkt till mig.
@@ -61,7 +61,7 @@ export function renderContact() {
                     </div>
 
                     <div>
-                        <h3>LinkedIn</h3>
+                        <h2>LinkedIn</h2>
 
                         <p>
                             Kontakta mig eller se min professionella profil.
@@ -87,7 +87,7 @@ export function renderContact() {
                     </div>
 
                     <div>
-                        <h3>GitHub</h3>
+                        <h2>GitHub</h2>
 
                         <p>
                             Se mina projekt, repositories och kod.

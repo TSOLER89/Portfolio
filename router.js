@@ -20,6 +20,14 @@ export function initRouter() {
             window.scrollTo(0, 0);
         }
     }
+    // Keep the current route and rendered content when skipping the shared navigation.
+    document.querySelector(".skip-link")?.addEventListener("click", event => {
+        if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        const main = document.getElementById("app");
+        main.focus({ preventScroll: true });
+        main.scrollIntoView({ block: "start", behavior: "instant" });
+    });
     window.addEventListener("hashchange", () => loadPage());
     loadPage(false);
 }
