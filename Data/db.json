@@ -119,7 +119,11 @@
     "type": "Fullstack / AI",
     "featured": false,
     "status": "Pågående",
-    "image": "Assets/Projects/devpilot.webp",
+    "image": "Assets/Projects/devpilot-code.png",
+    "imageFit": "contain",
+    "imageAlt": "DevPilot i mörkt tema med en React-fråga, ett exempel på AI-svar och syntaxfärgad kod med kopieringsknapp.",
+    "imageWidth": 1126,
+    "imageHeight": 720,
     "description": "En AI-driven utvecklarassistent byggd med React, ASP.NET Core och OpenAI. Applikationen hjälper utvecklare att lära sig och repetera programmeringskoncept genom en interaktiv chatt.",
     "tech": [
       "React",

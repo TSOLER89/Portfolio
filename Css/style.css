@@ -767,6 +767,21 @@ header {
     transform: scale(1.02);
 }
 
+.project-image-wrapper--contain {
+    aspect-ratio: auto;
+    background: #16171d;
+}
+
+.project-image-wrapper--contain .project-image {
+    display: block;
+    height: auto;
+    object-fit: contain;
+}
+
+.project-card:hover .project-image-wrapper--contain .project-image {
+    transform: none;
+}
+
 .project-card-content {
     display: flex;
     flex-direction: column;

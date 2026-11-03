@@ -343,12 +343,13 @@ function createProjectCard(
         </div>`
         : project.image
             ? `
-                <div class="project-image-wrapper">
+                <div class="project-image-wrapper${project.imageFit === 'contain' ? ' project-image-wrapper--contain' : ''}">
 
                     <img
                         src="${project.image}"
-                        alt="Projektbild för ${project.title}"
+                        alt="${project.imageAlt || `Projektbild för ${project.title}`}"
                         class="project-image"
+                        ${project.imageWidth && project.imageHeight ? `width="${project.imageWidth}" height="${project.imageHeight}"` : ''}
                         loading="lazy"
                     >
 
