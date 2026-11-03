@@ -331,8 +331,17 @@ function createProjectCard(
        IMAGE
     ======================================== */
 
-    const image =
-        project.image
+    const screenshots = project.screenshots || [];
+    const image = screenshots.length
+        ? `<div class="project-gallery" aria-label="Skärmbilder från ${project.title}">
+            ${screenshots.map(screenshot => `
+                <figure class="project-screenshot${screenshot.portrait ? ' project-screenshot-mobile' : ''}">
+                    <img src="${screenshot.src}" alt="${screenshot.alt}" width="${screenshot.width}" height="${screenshot.height}" loading="lazy" decoding="async">
+                    <figcaption>${screenshot.caption}</figcaption>
+                </figure>
+            `).join('')}
+        </div>`
+        : project.image
             ? `
                 <div class="project-image-wrapper">
 
@@ -449,6 +458,8 @@ function createProjectCard(
                 ${project.description || ""}
             </p>
 
+            ${project.stage ? `<p class="project-stage">${project.stage}</p>` : ""}
+
 
             <div class="tags">
                 ${techTags}
@@ -512,6 +523,8 @@ function createProjectCard(
                     : ""
             }
 
+
+            ${project.scopeNote ? `<p class="project-scope-note">${project.scopeNote}</p>` : ""}
 
             ${links}
 

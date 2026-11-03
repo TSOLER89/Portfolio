@@ -41,34 +41,48 @@
   },
   {
     "title": "JobTrack - Job Application Tracker",
-    "type": "Fullstack / Web + Mobile",
-    "featured": true,
-    "image": "Assets/Projects/jobtrack.png",
-    "description": "En fullstacklösning för att hantera jobbansökningar via både webb och mobil. React-webbappen och React Native-appen använder samma ASP.NET Core Web API och databas.",
+    "type": "Fullstack / Webb & mobil",
+    "featured": false,
+    "image": "Assets/Projects/jobtrack-web-start.png",
+    "description": "Jobbansökningar samlade på webb och mobil, med personlig översikt, uppföljningar och Gmail-import som granskas före sparande.",
     "tech": [
       "React",
-      "JavaScript",
-      "React Native",
+      "React Native / Expo",
       "TypeScript",
-      "Expo",
-      "C#",
-      "ASP.NET Core Web API",
-      "Entity Framework Core",
+      "C# / ASP.NET Core",
       "SQL Server",
-      "REST API"
+      "Gmail API"
     ],
     "highlights": [
-      "CRUD för jobbansökningar med sökning, filtrering och statistik",
-      "React-webbapp och React Native-app mot samma REST API",
-      "Bilduppladdning från både webb och mobil",
-      "ASP.NET Core, Entity Framework Core och SQL Server"
+      "Inloggning och egna ansökningar med bilder, sökning och statusfilter.",
+      "Statistik, planeringsdatum och uppföljningar.",
+      "Gmail-import med granskning, historik och dubblettskydd."
     ],
-    "value": "Jag kan bygga en sammanhängande fullstacklösning där webb, mobil, API och databas arbetar tillsammans.",
+    "value": "Webb och mobil delar samma testade API och databas.",
     "links": {
       "github": "https://github.com/TSOLER89/job-application-tracker",
       "backend": "https://github.com/TSOLER89/job-application-tracker-api",
       "mobile": "https://github.com/TSOLER89/job-application-tracker-mobile"
-    }
+    },
+    "stage": "Under utveckling · lokal demo",
+    "screenshots": [
+      {
+        "src": "Assets/Projects/jobtrack-web-start.png",
+        "alt": "JobTracks välkomstsida på webben med presentation och knappar för att skapa konto eller logga in.",
+        "caption": "Välkomstsida",
+        "width": 3200,
+        "height": 2000
+      },
+      {
+        "src": "Assets/Projects/jobtrack-oversikt.png",
+        "alt": "JobTracks översikt efter inloggning med antal ansökningar, intervjuer, erbjudanden och kommande uppföljningar.",
+        "caption": "Översikt",
+        "width": 1846,
+        "height": 945
+      }
+    ],
+    "scopeNote": "Manuell granskning av Gmail-import. Outlook och offentlig demo planeras.",
+    "status": "Pågående"
   },
   {
     "title": "TUC Booking System",
