@@ -1,16 +1,17 @@
 import { jobSearch, startLabel, endLabel, periodLabel } from "../Data/job-search.js";
 
-﻿export function renderHome() {
+export function renderHome() {
     document.getElementById("app").innerHTML = `
         <section class="hero"><div class="hero-container">
             <div class="hero-content">
-                <p class="hero-eyebrow">Systemutvecklare .NET · Linköping</p>
+                <p class="hero-eyebrow">
+                Systemutvecklare .NET · Linköping</p>
                 <h1 class="hero-title">Tsoler Hayitian<span>
                 Från verksamhetens behov till fungerande kod.
                 </span>
                 </h1>
                 <p class="hero-description">
-                Jag utvecklar webbapplikationer med C#, .NET, React och TypeScript med fokus på samspelet mellan gränssnitt, API och databas.
+                Jag utvecklar fullstacklösningar med C#, .NET, React och TypeScript, med fokus på samspelet mellan gränssnitt, API, databas och verksamhetens behov.
                 </p>
                 <p class="hero-subtext">
                 Studerar systemutveckling på TUC och har praktisk fullstackerfarenhet från Consid, med målet att fortsätta som junior systemutvecklare.</p>
@@ -34,18 +35,45 @@ import { jobSearch, startLabel, endLabel, periodLabel } from "../Data/job-search
             </div>
 
             <div class="hero-image-wrapper"><img src="Assets/Photos/CvBild.jpg" alt="Porträtt av Tsoler Hayitian" class="hero-image" width="360" height="440">
-            <p class="portrait-caption">Fullstack · Webb · Integrationer
+            <p class="portrait-caption">
+            Fullstack · Webb · Integrationer
             </p>
             </div>
         </div>
         </section>
 
         <section class="home-evidence" aria-labelledby="evidence-title">
-            <div class="section-header"><p class="section-kicker">Erfarenhet i praktiken</p><h2 id="evidence-title">Teknik med ett tydligt sammanhang.</h2></div>
+            <div class="section-header"><p class="section-kicker">
+            Erfarenhet i praktiken
+            </p>
+            <h2 id="evidence-title">
+            Teknik med ett tydligt sammanhang.
+            </h2>
+            </div>
             <div class="evidence-grid">
-                <article><span class="evidence-number">01 / Kundprojekt</span><h3>Fullstack på Consid</h3><p>React, TypeScript och .NET 8 i STB Driftportal. API-integrationer, PDF-automatisering och dokumenthantering i SharePoint.</p><a href="#about" data-page="about">Min erfarenhet →</a></article>
-                <article><span class="evidence-number">02 / Applikationer</span><h3>Hela flödet i .NET</h3><p>Från marknadsplatsen NorGyank till JobTrack och TUC Booking System: gränssnitt, affärslogik, API:er och databaser.</p><a href="#projects" data-page="projects">Se projekten →</a></article>
-                <article><span class="evidence-number">03 / CMS & webb</span><h3>Innehåll som går att förvalta</h3><p>Umbraco, Razor och Sass i Förening Pixel. Mitt ansvar var sidan Matcher & träningar, med innehållsmodeller och responsiva vyer.</p><a href="#projects" data-page="projects">Se CMS-projektet →</a></article>
+                <article><span class="evidence-number">01 / Kundprojekt
+                </span>
+                <h3>Fullstack på Consid</h3>
+                <p>
+                React, TypeScript och .NET 8 i STB Driftportal. API-integrationer, PDF-automatisering och dokumenthantering i SharePoint.
+                </p>
+                <a href="#about" data-page="about">Min erfarenhet →</a></article>
+                <article><span class="evidence-number">02 / Applikationer
+                </span>
+                <h3>Hela flödet i .NET</h3>
+                <p>Från marknadsplatsen NorGyank till JobTrack och TUC Booking System: gränssnitt, affärslogik, API:er och databaser.
+                </p>
+                <a href="#projects" data-page="projects">
+                Se projekten →
+                </a>
+                </article>
+                <article>
+                <span class="evidence-number">
+                03 / CMS & webb
+                </span>
+                <h3>Innehåll som går att förvalta</h3><p>Umbraco, Razor och Sass i Förening Pixel. Mitt ansvar var sidan Matcher & träningar, med innehållsmodeller och responsiva vyer.
+                </p>
+                <a href="#projects" data-page="projects">Se CMS-projektet →</a></article>
             </div>
         </section>
         <section class="home-contact">

@@ -23,14 +23,28 @@ export function renderContact() {
 
 
             <section class="contact-availability" aria-labelledby="lia-availability-heading">
-                <h2 id="lia-availability-heading">LIA 2 och examensarbete</h2>
+                <h2 id="lia-availability-heading">
+                LIA 2 och examensarbete
+                </h2>
                 <dl>
-                    <div><dt>Period</dt><dd><time datetime="${jobSearch.startDate}">${startLabel}</time>–<time datetime="${jobSearch.endDate}">${endLabel}</time></dd></div>
-                    <div><dt>Ort och arbetsform</dt><dd>${jobSearch.locationPreference}.</dd></div>
+            <div>
+                <dt>
+                    Period
+                 </dt>
+                <dd>
+                            <time datetime="${jobSearch.startDate}">${startLabel}</time>–<time datetime="${jobSearch.endDate}">${endLabel}</time></dd></div>
+                    <div><dt>Ort och arbetsform</dt>
+                    <dd>
+                    ${jobSearch.locationPreference}.
+                        </dd>
+                    </div>
                 </dl>
             </section>
 
-            <p class="contact-cv"><a class="btn btn-secondary" href="Assets/PDF/Tsoler-Hayitian-utvecklare.pdf" target="_blank" rel="noopener noreferrer">Läs mitt CV (PDF) →</a></p>
+            <p class="contact-cv"><a class="btn btn-secondary" href="Assets/PDF/Tsoler-Hayitian-utvecklare.pdf" target="_blank" rel="noopener noreferrer">
+            Läs mitt CV (PDF) →
+            </a>
+            </p>
             <div class="contact-grid">
 
                 <!-- E-post -->
@@ -39,7 +53,9 @@ export function renderContact() {
                     <div class="contact-icon" aria-hidden="true">✉</div>
                     <div class="contact-email-content">
                         <h2>E-post</h2>
-                        <p>Kontakta mig om LIA, examensarbete eller andra utvecklingsmöjligheter.</p>
+                        <p>
+                        Kontakta mig om LIA, examensarbete eller andra utvecklingsmöjligheter.
+                        </p>
                         <a class="contact-email-address" href="mailto:${jobSearch.email}">${jobSearch.email}</a>
                         <div class="contact-email-actions">
                             <a class="btn btn-secondary" href="mailto:${jobSearch.email}">Skriv e-post</a>
