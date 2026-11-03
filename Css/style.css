@@ -1668,14 +1668,6 @@ header {
    ONGOING PROJECT
 ======================================== */
 
-#ongoingProjects {
-    grid-template-columns: 1fr;
-
-    max-width: 680px;
-
-    margin: 0 auto;
-}
-
 .ongoing-project-card {
     border: 1px solid #e3d3dd;
 
@@ -2145,12 +2137,7 @@ footer p {
             rgba(255, 255, 255, 0.08);
     }
 
-    #ongoingProjects {
-    max-width: none;
-}
-
-
-    /* About */
+/* About */
 
     .about-intro {
         margin: 2rem 1rem;
@@ -2260,13 +2247,6 @@ footer p {
     /* ========================================
    ONGOING PROJECT
 ======================================== */
-
-#ongoingProjects {
-    grid-template-columns:
-        minmax(0, 1fr);
-
-    max-width:none;
-}
 
 .ongoing-projects {
     padding-top: 0.5rem;
@@ -2542,7 +2522,7 @@ h1, h2, h3 { text-wrap: balance; }
 .about-hobbies .hobby-card:nth-child(3) .hobby-icon { background: #e3ebdf; color: #486043; }
 .about-hobbies .hobby-card h3 { font-size: 1rem; margin-bottom: .35rem; color: #603d52; }
 .about-hobbies .hobby-card p { color: #625962; }
-#featuredProjects { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+#featuredProjects, #ongoingProjects { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; max-width: none; width: 100%; }
 .project-card-content { min-width: 0; }
 .project-links { flex-wrap: wrap; }
 .project-image-wrapper { background: #f4edf1; }
@@ -2571,7 +2551,7 @@ footer { background: #f1e9ee; color: #51444d; border-top: 1px solid #e7dfe4; }
     .hero .btn { width: auto; }
     .hero-tech { justify-content: flex-start; }
     .home-evidence, .home-contact { margin-left: 1.25rem; margin-right: 1.25rem; padding: 2rem 0; }
-    .evidence-grid, .background-grid, .skills-grid, #featuredProjects { grid-template-columns: 1fr; }
+    .evidence-grid, .background-grid, .skills-grid, #featuredProjects, #ongoingProjects { grid-template-columns: 1fr; }
     .evidence-grid article + article { border-top: 1px solid #e7dfe4; padding-top: 1.5rem; }
     .home-contact { flex-direction: column; align-items: flex-start; }
     .about-intro, .experience-section, .skills-section, .projects-section, .contact-section { padding: 2rem 1.25rem; }
