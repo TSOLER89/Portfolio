@@ -19,42 +19,6 @@ export function renderProjects() {
 
 
             <!-- ========================================
-                 UTVALDA PROJEKT
-            ======================================== -->
-
-            <section
-                id="featuredProjectsSection"
-                class="project-group"
-            >
-
-                <div class="project-group-heading">
-
-                    <span class="project-group-icon">
-                        ★
-                    </span>
-
-                    <div>
-                        <p class="section-kicker">
-                            Utvalt
-                        </p>
-
-                        <h2>
-                            Utvalda projekt
-                        </h2>
-                    </div>
-
-                </div>
-
-
-                <div
-                    id="featuredProjects"
-                    class="projects-container"
-                ></div>
-
-            </section>
-
-
-            <!-- ========================================
                  PÅGÅENDE PROJEKT
             ======================================== -->
 
@@ -84,6 +48,42 @@ export function renderProjects() {
 
                 <div
                     id="ongoingProjects"
+                    class="projects-container"
+                ></div>
+
+            </section>
+
+
+            <!-- ========================================
+                 UTVALDA PROJEKT
+            ======================================== -->
+
+            <section
+                id="featuredProjectsSection"
+                class="project-group"
+            >
+
+                <div class="project-group-heading">
+
+                    <span class="project-group-icon">
+                        ★
+                    </span>
+
+                    <div>
+                        <p class="section-kicker">
+                            Utvalt
+                        </p>
+
+                        <h2>
+                            Utvalda projekt
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="featuredProjects"
                     class="projects-container"
                 ></div>
 

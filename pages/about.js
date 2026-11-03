@@ -71,10 +71,10 @@
             <h4>
             Teknik i projektet
             </h4>
-            <div class="experience-tech">${["React", "TypeScript", "C#", ".NET 8", "SharePoint", "API-integrationer", "PDF-generering"].map(s => `<span>${s}</span>`).join("")}'
-                </div>
+            <div class="experience-tech">${["React", "TypeScript", "C#", ".NET 8", "SharePoint", "API-integrationer", "PDF-generering"].map(s => `<span>${s}</span>`).join("")}
             </div>
         </div>
+    </div>
             </article>
         </section>
         <section class="skills-section" id="skills"><div class="section-header"><p class="section-kicker">Teknik & arbetssätt</p><h2>Min tekniska verktygslåda.</h2><p>Tekniker jag har använt i utbildning, egna projekt och praktik.</p></div><div class="skills-grid">${skills.map(([title, ...tags]) => `<article class="skill-category"><h3>${title}</h3><div class="skill-tags">${tags.map(s => `<span>${s}</span>`).join("")}</div></article>`).join("")}</div></section>

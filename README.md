@@ -91,7 +91,7 @@ Funktioner:
 
 Projektet är under utveckling och visas som lokal demo. Sökningen omfattar högst 50 matchande mejl från de senaste 90 dagarna. Automatiskt sparande, Outlook och offentlig live-demo återstår.
 
-Projektkortet visar [webbens välkomstsida](Assets/Projects/jobtrack-web-start.png) och [översikten efter inloggning](Assets/Projects/jobtrack-oversikt.png). Skärmbilderna visas sida vid sida i ett kompakt galleri utan klicklänkar. Projektkortet följer samma kolumnbredd och bildproportioner som övriga projekt.
+Projektkortet visar [webbens välkomstsida](Assets/Projects/jobtrack-web-start.webp) och [översikten efter inloggning](Assets/Projects/jobtrack-oversikt.png). Skärmbilderna visas sida vid sida i ett kompakt galleri utan klicklänkar. Projektkortet följer samma kolumnbredd och bildproportioner som övriga projekt.
 
 Kod: [Webb](https://github.com/TSOLER89/job-application-tracker), [API](https://github.com/TSOLER89/job-application-tracker-api), [Mobil](https://github.com/TSOLER89/job-application-tracker-mobile).
 
@@ -195,3 +195,5 @@ Vid ändring av CSS uppdateras versionsparametern i stilmallens länk i `index.h
 ## LIA och kontaktuppgifter
 
 Jag söker LIA 2 och examensarbete **14 december 2026–28 maj 2027**, främst på plats i **Linköping eller Norrköping**. Period, ortsönskemål och mejladress finns i `pages/job-search.js` och återanvänds på startsidan och kontaktsidan. Kontaktsidan visar mejladressen och har separata funktioner för att öppna ett mejl eller kopiera adressen. Om webbläsaren blockerar kopiering visas instruktioner för manuell kopiering.
+
+Projektgrupperna visas i ordningen pågående, utvalda och tidigare projekt. Projektbilderna använder komprimerade WebP-versioner där det minskar filstorleken. Oanvända äldre bilder är borttagna. JobTracks översiktsbild använder fortsatt PNG eftersom den är mindre än den konverterade versionen.

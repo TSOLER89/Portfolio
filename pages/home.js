@@ -73,7 +73,10 @@ export function renderHome() {
                 </span>
                 <h3>Innehåll som går att förvalta</h3><p>Umbraco, Razor och Sass i Förening Pixel. Mitt ansvar var sidan Matcher & träningar, med innehållsmodeller och responsiva vyer.
                 </p>
-                <a href="#projects" data-page="projects">Se CMS-projektet →</a></article>
+                <a href="#projects" data-page="projects">
+                Se CMS-projektet →
+                </a>
+                </article>
             </div>
         </section>
         <section class="home-contact">
