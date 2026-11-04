@@ -23,6 +23,8 @@
     "title": "Förening Pixel",
     "type": "CMS / Grupprojekt",
     "featured": true,
+    "image": "Assets/Projects/pixel-forening.png",
+    "imageAlt": "Skärmbild från webbplatsen Förening Pixel.",
     "description": "En webbplats byggd i Umbraco 18 som gruppprojekt, med innehållsmodeller, Razor-vyer och responsiv design.",
     "tech": [
       "Umbraco 18",
