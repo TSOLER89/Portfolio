@@ -35,6 +35,18 @@
         Från behov till funktion.
         </h2>
             </div>
+            <article class="experience-card" aria-label="Kommande praktik på Vårdaccess">
+            <div class="experience-card-header">
+            <div>
+            <p class="experience-company">
+            Vårdaccess · Linköping</p>
+            <h3>Fullstack Developer Intern</h3>
+            <p class="experience-project">Kommande praktik</p>
+            </div>
+                <span class="experience-date">
+                    December 2026 – May 2027</span>
+            </div>
+            </article>
             <article class="experience-card">
             <div class="experience-card-header">
             <div>

@@ -15,10 +15,10 @@ export function renderHome() {
                 </p>
                 <p class="hero-subtext">
                 Studerar systemutveckling på TUC och har praktisk fullstackerfarenhet från Consid, med målet att fortsätta som junior systemutvecklare.</p>
-                <aside class="lia-summary" aria-label="Söker LIA 2 och examensarbete">
-                    <p class="lia-summary-title">Söker LIA 2 och examensarbete</p>
-                    <p class="lia-summary-dates"><time datetime="${jobSearch.startDate}">${startLabel}</time>–<time datetime="${jobSearch.endDate}">${endLabel}</time></p>
-                    <p class="lia-summary-location">${jobSearch.locationPreference}.</p>
+                <aside class="lia-summary" aria-label="Career opportunities">
+                    <p class="lia-summary-dates">Graduating June 2027</p>
+                    <p class="lia-summary-title">.NET Software Developer | Fullstack Development</p>
+                    <p class="lia-summary-location">Open to Summer Internships &amp; Junior Developer Opportunities</p>
                 </aside>
                 <div class="hero-actions"><a href="#projects" class="btn btn-primary" data-page="projects">Utforska mina projekt →
                 </a>
