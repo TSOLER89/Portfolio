@@ -1,6 +1,7 @@
 // Shared, public details used on the home and contact pages.
 export const jobSearch = {
     email: "tsoler.hayitian.syne25lin@edu.tucsweden.se",
+    personalEmail: "tsoler.hayitian@gmail.com",
     startDate: "2026-12-14",
     endDate: "2027-05-28",
     locationPreference: "Främst på plats i Linköping eller Norrköping",

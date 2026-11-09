@@ -1,5 +1,3 @@
-﻿import { jobSearch, startLabel, endLabel, periodLabel } from "./job-search.js";
-
 export function renderHome() {
     document.getElementById("app").innerHTML = `
         <section class="hero"><div class="hero-container">
@@ -84,8 +82,8 @@ export function renderHome() {
         <p class="section-kicker">
         Nästa steg
         </p>
-        <h2>En plats att bidra och utvecklas.</h2>
-        <p>Jag söker LIA 2 och examensarbete ${periodLabel}. ${jobSearch.locationPreference}.</p>
+        <h2>Nästa steg</h2>
+        <p>Jag tar examen som systemutvecklare .NET i juni 2027 och vill bygga vidare på min erfarenhet av fullstackutveckling och integrationer. Jag söker sommarpraktik, traineeprogram eller en junior utvecklarroll där jag får skapa lösningar som knyter samman gränssnitt, API:er och system och fortsätta växa tillsammans med ett utvecklingsteam.</p>
         </div>
         <a href="#contact" data-page="contact" class="btn btn-primary">
         Ta kontakt →

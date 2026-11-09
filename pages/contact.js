@@ -1,4 +1,4 @@
-import { jobSearch, startLabel, endLabel } from "./job-search.js";
+import { jobSearch } from "./job-search.js";
 
 export function renderContact() {
     const app = document.getElementById("app");
@@ -16,26 +16,28 @@ export function renderContact() {
                 </h1>
 
                 <p>
-                    Jag söker en plats för LIA 2 och examensarbete inom .NET och fullstackutveckling.
-                    Hör gärna av dig om ni har en möjlighet eller vill veta mer om mina projekt.
+                    Jag tar examen som systemutvecklare .NET i juni 2027 och vill fortsätta utvecklas inom fullstackutveckling och integrationer.
+                    Hör gärna av dig om sommarpraktik, traineeprogram eller juniora utvecklarroller.
                 </p>
             </div>
 
 
-            <section class="contact-availability" aria-labelledby="lia-availability-heading">
-                <h2 id="lia-availability-heading">
-                LIA 2 och examensarbete
+            <section class="contact-availability" aria-labelledby="opportunities-heading">
+                <h2 id="opportunities-heading">
+                Nästa steg
                 </h2>
                 <dl>
             <div>
                 <dt>
-                    Period
+                    Öppen för
                  </dt>
                 <dd>
-                            <time datetime="${jobSearch.startDate}">${startLabel}</time>–<time datetime="${jobSearch.endDate}">${endLabel}</time></dd></div>
+                    Sommarpraktik, traineeprogram och juniora utvecklarroller
+                </dd>
+            </div>
                     <div><dt>Ort och arbetsform</dt>
                     <dd>
-                    ${jobSearch.locationPreference}.
+                    Fullstackutveckling och integrationer · ${jobSearch.locationPreference}.
                         </dd>
                     </div>
                 </dl>
@@ -54,12 +56,15 @@ export function renderContact() {
                     <div class="contact-email-content">
                         <h2>E-post</h2>
                         <p>
-                        Kontakta mig om LIA, examensarbete eller andra utvecklingsmöjligheter.
+                        Kontakta mig om sommarpraktik, traineeprogram eller juniora utvecklarroller.
                         </p>
+                        <p>Privat e-post</p>
+                        <a class="contact-email-address" href="mailto:${jobSearch.personalEmail}">${jobSearch.personalEmail}</a>
+                        <p>TUC-e-post (under studietiden)</p>
                         <a class="contact-email-address" href="mailto:${jobSearch.email}">${jobSearch.email}</a>
                         <div class="contact-email-actions">
-                            <a class="btn btn-secondary" href="mailto:${jobSearch.email}">Skriv e-post</a>
-                            <button type="button" class="btn btn-secondary" data-copy-email>Kopiera mejladress</button>
+                            <a class="btn btn-secondary" href="mailto:${jobSearch.personalEmail}">Skriv privat e-post</a>
+                            <button type="button" class="btn btn-secondary" data-copy-email>Kopiera privat e-post</button>
                         </div>
                         <p class="contact-copy-status" data-copy-status role="status" aria-live="polite" aria-atomic="true"></p>
                     </div>
@@ -131,7 +136,7 @@ export function renderContact() {
         copyStatus.textContent = "";
         try {
             if (!navigator.clipboard?.writeText) throw new Error("Clipboard unavailable");
-            await navigator.clipboard.writeText(jobSearch.email);
+            await navigator.clipboard.writeText(jobSearch.personalEmail);
             if (pageRoot.isConnected) copyStatus.textContent = "Mejladressen är kopierad.";
         } catch {
             if (pageRoot.isConnected) copyStatus.textContent = "Kunde inte kopiera automatiskt. Markera mejladressen och kopiera den manuellt.";
