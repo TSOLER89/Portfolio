@@ -39,7 +39,7 @@
             <div class="experience-card-header">
             <div>
             <p class="experience-company">
-            Vårdaccess · Linköping</p>
+            Consid · Norrköping</p>
             <h3>Fullstack Developer Intern</h3>
             <p class="experience-project">Kommande praktik</p>
             </div>
@@ -58,7 +58,7 @@
                 STB Driftportal</p>
             </div>
                 <span class="experience-date">
-                    April–maj 2026</span>
+                    March – May 2026</span>
             </div>
                     <p class="experience-description">
                 Utveckling i ett verksamhetssystem för projektstyrning och dokumenthantering inom byggbranschen.
