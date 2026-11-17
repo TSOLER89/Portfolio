@@ -21,7 +21,7 @@
             </p>
 
             <div class="hero-actions">
-            <a class="btn btn-primary" href="Assets/PDF/Tsoler-Hayitian-utvecklare.pdf" target="_blank" rel="noopener noreferrer">Läs mitt CV (PDF)</a><a class="btn btn-secondary" href="#contact" data-page="contact">
+            <a class="btn btn-primary" href="Assets/PDF/Tsoler-Hayitian-utvecklare.pdf?v=20261117" target="_blank" rel="noopener noreferrer">Läs mitt CV (PDF)</a><a class="btn btn-secondary" href="#contact" data-page="contact">
             Kontakta mig
                 </a>
              </div>

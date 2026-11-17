@@ -43,7 +43,7 @@ export function renderContact() {
                 </dl>
             </section>
 
-            <p class="contact-cv"><a class="btn btn-secondary" href="Assets/PDF/Tsoler-Hayitian-utvecklare.pdf" target="_blank" rel="noopener noreferrer">
+            <p class="contact-cv"><a class="btn btn-secondary" href="Assets/PDF/Tsoler-Hayitian-utvecklare.pdf?v=20261117" target="_blank" rel="noopener noreferrer">
             Läs mitt CV (PDF) →
             </a>
             </p>

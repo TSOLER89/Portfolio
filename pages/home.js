@@ -20,7 +20,7 @@ export function renderHome() {
                 </aside>
                 <div class="hero-actions"><a href="#projects" class="btn btn-primary" data-page="projects">Utforska mina projekt →
                 </a>
-                <a href="Assets/PDF/Tsoler-Hayitian-utvecklare.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                <a href="Assets/PDF/Tsoler-Hayitian-utvecklare.pdf?v=20261117" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
                 Läs mitt CV (PDF)
                 </a>
                 </div>
