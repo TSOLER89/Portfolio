@@ -35,13 +35,13 @@
         Från behov till funktion.
         </h2>
             </div>
-            <article class="experience-card" aria-label="Kommande praktik på Vårdaccess">
+            <article class="experience-card" aria-label="Kommande LIA 2 på Consid i Norrköping">
             <div class="experience-card-header">
             <div>
             <p class="experience-company">
             Consid · Norrköping</p>
             <h3>Fullstack Developer Intern</h3>
-            <p class="experience-project">Kommande praktik</p>
+            <p class="experience-project">Kommande praktik · LIA 2</p>
             </div>
                 <span class="experience-date">
                     December 2026 – May 2027</span>

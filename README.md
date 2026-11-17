@@ -194,6 +194,6 @@ Vid ändring av CSS uppdateras versionsparametern i stilmallens länk i `index.h
 
 ## LIA och kontaktuppgifter
 
-Jag söker LIA 2 och examensarbete **14 december 2026–28 maj 2027**, främst på plats i **Linköping eller Norrköping**. Period, ortsönskemål och mejladress finns i `pages/job-search.js` och återanvänds på startsidan och kontaktsidan. Kontaktsidan visar mejladressen och har separata funktioner för att öppna ett mejl eller kopiera adressen. Om webbläsaren blockerar kopiering visas instruktioner för manuell kopiering.
+Min kommande LIA 2 är på **Consid i Norrköping**, december 2026–maj 2027. Startsidan och kontaktsidan beskriver att jag söker sommarpraktik, traineeprogram eller en junior utvecklarroll efter examen i juni 2027. Ortsönskemål och mejladresser finns i `pages/job-search.js` och används på kontaktsidan. Kontaktsidan visar både privat e-post och TUC-e-post, med funktioner för att öppna ett mejl eller kopiera den privata adressen. Om webbläsaren blockerar kopiering visas instruktioner för manuell kopiering.
 
 Projektgrupperna visas i ordningen pågående, utvalda och tidigare projekt. Projektbilderna använder komprimerade WebP-versioner där det minskar filstorleken. Oanvända äldre bilder är borttagna. JobTracks översiktsbild använder fortsatt PNG eftersom den är mindre än den konverterade versionen.
